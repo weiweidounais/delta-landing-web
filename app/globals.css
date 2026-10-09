@@ -62,3 +62,23 @@
  .scroll-experience>.section-shell{position:relative;top:auto}
  .scroll-experience>.section-shell::after,.hero-cover-shade{display:none}
 }
+
+.weapon-rotation-view{display:grid;perspective:1800px;perspective-origin:50% 45%;overflow:hidden;isolation:isolate}
+.weapon-rotation-view>.weapon-panel{grid-area:1/1;min-width:0;visibility:hidden;opacity:0;pointer-events:none;backface-visibility:hidden;transform-origin:50% 50%}
+.weapon-rotation-view .weapon-stage>img{animation:none;aspect-ratio:3840/2110}
+.weapon-rotation-view>.weapon-panel[data-turn=in]{visibility:visible;opacity:1;pointer-events:auto;z-index:2}
+.weapon-rotation-view>.weapon-panel[data-turn=out]{visibility:visible;z-index:1;animation-duration:.7s;animation-timing-function:cubic-bezier(.22,.68,.19,1);animation-fill-mode:both}
+.weapon-rotation-view>.weapon-panel[data-turn=in][data-animated=true]{animation-duration:.7s;animation-timing-function:cubic-bezier(.22,.68,.19,1);animation-fill-mode:both}
+.weapon-rotation-view>.weapon-panel[data-turn=in][data-animated=true][data-direction=next]{animation-name:weapon-turn-in-next}
+.weapon-rotation-view>.weapon-panel[data-turn=in][data-animated=true][data-direction=previous]{animation-name:weapon-turn-in-previous}
+.weapon-rotation-view>.weapon-panel[data-turn=out][data-direction=next]{animation-name:weapon-turn-out-next}
+.weapon-rotation-view>.weapon-panel[data-turn=out][data-direction=previous]{animation-name:weapon-turn-out-previous}
+@keyframes weapon-turn-in-next{from{opacity:0;transform:translateX(18%) rotateY(-65deg)}to{opacity:1;transform:translateX(0) rotateY(0)}}
+@keyframes weapon-turn-out-next{from{opacity:1;transform:translateX(0) rotateY(0)}to{opacity:0;transform:translateX(-18%) rotateY(65deg)}}
+@keyframes weapon-turn-in-previous{from{opacity:0;transform:translateX(-18%) rotateY(65deg)}to{opacity:1;transform:translateX(0) rotateY(0)}}
+@keyframes weapon-turn-out-previous{from{opacity:1;transform:translateX(0) rotateY(0)}to{opacity:0;transform:translateX(18%) rotateY(-65deg)}}
+@media(prefers-reduced-motion:reduce){
+ .weapon-rotation-view{perspective:none}
+ .weapon-rotation-view>.weapon-panel[data-turn=in][data-animated=true]{animation:none;transform:none}
+ .weapon-rotation-view>.weapon-panel[data-turn=out]{visibility:hidden;animation:none}
+}

@@ -65,9 +65,17 @@ export function OperatorSection(){
  </Tabs></section>;
 }
 export function WeaponSection(){
- const [selected,setSelected]=useState(game.weapons[0].name);
+ const [turn,setTurn]=useState<{name:string;previous:string|null;direction:number;revision:number}>({name:game.weapons[0].name,previous:null,direction:1,revision:0});
+ const selectWeapon=(name:string)=>setTurn(current=>{
+  if(name===current.name)return current;
+  const index=game.weapons.findIndex(w=>w.name===name),previousIndex=game.weapons.findIndex(w=>w.name===current.name);
+  return {name,previous:current.name,direction:index>previousIndex?1:-1,revision:current.revision+1};
+ });
+ const finishTurn=(name:string,revision:number)=>setTurn(current=>current.previous===name&&current.revision===revision?{...current,previous:null}:current);
  const short=(s:string)=>s.replace(/战斗步枪|冲锋枪|霰弹枪|通用机枪|射手步枪|狙击步枪/g,"");
  return <section id="weapons" className="weapons-section section-shell"><div className="section-label"><span>03 / 武器库</span><span>WEAPON SYSTEMS</span></div><div className="section-heading"><div><p className="eyebrow">应对每一次战术交锋</p><h2>你的武器，<span>你的选择</span></h2></div><p>官网展示枪械<br/><small>了解特点，选择适合的武器</small></p></div>
- <Tabs value={selected} onValueChange={setSelected} className="weapon-tabs"><TabsList className="weapon-list" aria-label="选择枪械">{game.weapons.map(w=><TabsTrigger key={w.name} value={w.name} className="weapon-tab" aria-label={"选择枪械"+short(w.name)}><img src={w.thumbnail} alt="" loading="lazy"/><span>{short(w.name)}</span><small>{w.name.replace(short(w.name),"")}</small></TabsTrigger>)}</TabsList>
- {game.weapons.map((w,i)=><TabsContent value={w.name} key={w.name} className="weapon-panel"><div className="weapon-stage"><img src={w.image} alt={w.name+"官方展示及改装细节"} loading="lazy"/><span className="weapon-index">ARMORY / 0{i+1}</span></div><div className="weapon-description"><div><Target size={22}/><h3>{w.name}</h3></div><p>{w.description}</p><span>G.T.I. / 标准武器档案</span></div></TabsContent>)}</Tabs></section>;
+ <Tabs value={turn.name} onValueChange={selectWeapon} className="weapon-tabs"><TabsList className="weapon-list" aria-label="选择枪械">{game.weapons.map(w=><TabsTrigger key={w.name} value={w.name} className="weapon-tab" aria-label={"选择枪械"+short(w.name)}><img src={w.thumbnail} alt="" loading="lazy"/><span>{short(w.name)}</span><small>{w.name.replace(short(w.name),"")}</small></TabsTrigger>)}</TabsList>
+ <div className="weapon-rotation-view">
+ {game.weapons.map((w,i)=><TabsContent forceMount value={w.name} key={w.name} className="weapon-panel" data-turn={w.name===turn.name?"in":w.name===turn.previous?"out":"rest"} data-direction={turn.direction>0?"next":"previous"} data-animated={turn.revision>0} aria-hidden={w.name!==turn.name} inert={w.name!==turn.name} tabIndex={w.name===turn.name?0:-1} onAnimationEnd={event=>{if(event.target===event.currentTarget&&event.animationName.startsWith("weapon-turn-out"))finishTurn(w.name,turn.revision)}}><div className="weapon-stage"><img src={w.image} alt={w.name+"官方展示及改装细节"} width={3840} height={2110} loading="lazy"/><span className="weapon-index">ARMORY / 0{i+1}</span></div><div className="weapon-description"><div><Target size={22}/><h3>{w.name}</h3></div><p>{w.description}</p><span>G.T.I. / 标准武器档案</span></div></TabsContent>)}
+ </div></Tabs></section>;
 }
