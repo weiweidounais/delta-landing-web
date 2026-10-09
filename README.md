@@ -17,6 +17,26 @@
 
 正式发布通过 Sites 管理，复用 .openai/hosting.json 的项目 ID。数据库迁移位于 drizzle/。云端同步任务仅调用 /api/passwords/refresh 和读取 /api/passwords，不修改源码、不重新发布网站。
 
+## GitHub Pages 发布
+
+GitHub Pages 使用独立的 Vite React 入口 `github-pages/main.tsx`，复用现有页面、样式、交互和素材，输出到 `dist-pages/`。原有 Sites 构建和数据库接口继续使用上述命令。Pages 上的密码来自静态文件 `data/passwords.json`，由 GitHub Actions 在发布前生成。
+
+本地构建与预览：
+
+```sh
+npm run update:pages-passwords
+npm run build:pages
+npm run preview:pages
+```
+
+项目站点的子路径由 `GITHUB_REPOSITORY=用户名/仓库名` 自动推导；`用户名.github.io` 仓库使用根路径。也可以用 `PAGES_BASE_PATH=/仓库名/` 指定本地验证路径。Actions 使用 GitHub Pages 返回的实际 `base_path`，同时支持项目子路径和自定义域名。
+
+在仓库 Settings → Pages 中选择 GitHub Actions 作为发布来源。`.github/workflows/pages.yml` 在 `main` 推送、手动运行，以及北京时间每天 02:00、03:00、04:00 时执行；后两次补充同步可重试尚未更新或暂不可用的来源。定时任务按 UTC 配置，GitHub 负载高时可能延迟。
+
+抓取脚本直接复用 `lib/password-sources.ts` 和 `lib/password-model.ts`：两来源并行获取，按地图、门类型与密码去重，保留来源差异、前导零和较早记录提示。至少一来源返回可用密码才写入静态汇总；双方均无可用记录时，任务失败并停止上传和部署，线上保留上次成功版本。浏览器仍在跨日后隐藏旧快照，每五分钟及页面重新获得焦点时读取已发布的 JSON；“刷新密码”重新读取文件，实际来源抓取由 Actions 负责。
+
+每次成功采集后，Actions 只提交有变化的 `public/data/passwords.json`，将真实密码快照纳入版本记录。提交使用 `github-actions[bot]` 和工作流的 `GITHUB_TOKEN`，不会递归触发新的推送工作流。未来页面修改推送到 `main` 后会自动重新构建并发布。
+
 ## 资料与素材
 官网：https://df.qq.com/cp/a20240906main/
 GitHub：https://github.com/Entropy-Increase-Team/delta-force-plugin （素材核对提交 1a00e85a8a32078b2fd1124a4776d131fb62eefb）

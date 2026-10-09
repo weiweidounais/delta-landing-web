@@ -4,13 +4,14 @@ import {Copy,RefreshCw,MapPin,Clock3,Check,Radio,TriangleAlert} from "lucide-rea
 import {toast} from "sonner";
 import {Toaster} from "@/components/ui/sonner";
 import {chinaDate,currentSnapshot,waiting,SOURCES,type PasswordData,type Candidate} from "@/lib/password-model";
+import {passwordUrl} from "@/lib/site-paths";
 const sourceName=(id:string)=>SOURCES.find(s=>s.id===id)?.name??id;
 export function PasswordSection(){
  const [data,setData]=useState<PasswordData|null>(null),[loading,setLoading]=useState(false),[copied,setCopied]=useState<string|null>(null);
  const refresh=useCallback(async()=>{
   setLoading(true);
   try{
-   const r=await fetch("/api/passwords",{cache:"no-store"});const result=await r.json() as PasswordData;
+   const r=await fetch(passwordUrl,{cache:"no-store"});const result=await r.json() as PasswordData;
    if(!Array.isArray(result.entries))throw Error("Invalid data");
    setData(currentSnapshot(result,new Date()));
   }catch{setData(waiting(new Date(),"暂时无法同步，稍后自动重试"))}
