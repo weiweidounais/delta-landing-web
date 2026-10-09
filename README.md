@@ -8,6 +8,8 @@
 - 每日密码分别读取 KKRB 和 Delta Force Codes，按地图、门类型与密码合并去重，同码合并来源，不同码保留差异。北京时间每天 02:00 同步，缺失或失败显示待更新，自动重试；跨日隐藏前日快照。
 - 来源没有密码生效日期/国服标签时，不将获取时间当成生效日期。页面保留说明。
 - 三音区 C3–B5，自然音键位 Q–U、A–J、Z–M。按住 Tab 升半音，支持多键；Esc、离开区域、失焦释放声音。
+- 首屏先显示用户提供的开场视频，滚动或拖动进度条推进约 15 秒的画面；继续下滑衔接原有群像缩放。上滑可回看，支持跳过开场，减少动态效果时直接显示静态首屏。
+- 游戏介绍左侧为用户提供的完整 6 分 27 秒视频窗口，点击后播放并保留声音；窗口离屏或被下一板块覆盖时暂停，保留进度。右侧按官网烽火地带的兵种搭配、曼德尔砖、安全撤离整理。
 
 ## 本地开发
 `npm run dev` 启动预览。
@@ -39,6 +41,8 @@ npm run preview:pages
 
 ## 资料与素材
 官网：https://df.qq.com/cp/a20240906main/
+烽火地带玩法介绍：https://df.qq.com/cp/a20240906main/#part3
+视频来自用户附件，网页版本位于 `public/videos/hero-intro.mp4` 和 `public/videos/firefight-introduction.mp4`。开场使用密集关键帧 H.264 编码方便滚动定位，静音且不自动播放；介绍视频保留完整内容和 AAC 音轨，压缩到约 41 MB，仅在点击播放后加载。两个文件均启用 MP4 faststart，预览封面从各自视频的第 2 秒提取。
 GitHub：https://github.com/Entropy-Increase-Team/delta-force-plugin （素材核对提交 1a00e85a8a32078b2fd1124a4776d131fb62eefb）
 密码来源：
 - KKRB：https://www.kkrb.net/?theme=dark&viewpage=view%2Fmap%2Fbonus_door

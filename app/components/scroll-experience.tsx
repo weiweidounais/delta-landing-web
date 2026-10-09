@@ -1,5 +1,6 @@
 "use client";
 import {useEffect,useRef,type ReactNode} from "react";
+import {heroProgress,HERO_PROGRESS_EVENT,HERO_EXTRA_SVH,ZOOM_SCROLL_SVH} from "@/lib/hero-scroll";
 const clamp=(value:number)=>Math.max(0,Math.min(1,value));
 export function ScrollExperience({children}:{children:ReactNode}){
  const root=useRef<HTMLElement>(null);
@@ -7,6 +8,9 @@ export function ScrollExperience({children}:{children:ReactNode}){
   const main=root.current;if(!main)return;
   const hero=main.querySelector<HTMLElement>(".hero");
   const scene=main.querySelector<HTMLElement>(".hero-scene");
+  const videoLayer=main.querySelector<HTMLElement>(".hero-video-layer");
+  const overviewVideo=main.querySelector<HTMLVideoElement>(".about-video-screen video");
+  const afterOverview=main.querySelector<HTMLElement>("#about")?.nextElementSibling;
   const header=main.querySelector<HTMLElement>(".site-header");
   const cards=Array.from(main.querySelectorAll<HTMLElement>(":scope > .section-shell"));
   const intro=Array.from(main.querySelectorAll<HTMLElement>(".hero-title,.hero-copy,.hero-footer,.hero-grid"));
@@ -14,7 +18,12 @@ export function ScrollExperience({children}:{children:ReactNode}){
   let frame=0,distance=1,headerHeight=82;
   const update=()=>{
    frame=0;
-   const progress=motion.matches?1:clamp(window.scrollY/distance);
+   const videoActive=!!videoLayer&&hero?.dataset.videoFailed!=="true"&&!motion.matches;
+   const timeline=heroProgress(window.scrollY,distance,videoActive);
+   const progress=motion.matches?1:timeline.zoomProgress;
+   main.style.setProperty("--hero-video-visible",String(timeline.videoVisible));
+   if(videoLayer){videoLayer.inert=timeline.videoVisible<.05;videoLayer.setAttribute("aria-hidden",String(timeline.videoVisible<.05))}
+   hero?.dispatchEvent(new CustomEvent(HERO_PROGRESS_EVENT,{detail:timeline}));
    const reveal=clamp((progress-.25)/.55);
    const eased=reveal*reveal*(3-2*reveal);
    main.style.setProperty("--intro-reveal",String(eased));
@@ -28,10 +37,16 @@ export function ScrollExperience({children}:{children:ReactNode}){
     const cover=!motion.matches&&next?clamp((window.innerHeight-next.getBoundingClientRect().top)/(window.innerHeight-headerHeight-12)):0;
     element.style.setProperty("--card-dim",String(cover*.32));
    });
+   if(overviewVideo&&!overviewVideo.paused&&!document.fullscreenElement&&document.pictureInPictureElement!==overviewVideo){
+    const rect=overviewVideo.getBoundingClientRect();
+    const visibleBottom=Math.min(window.innerHeight,afterOverview?.getBoundingClientRect().top??window.innerHeight);
+    if(rect.bottom<=headerHeight||rect.top>=visibleBottom)overviewVideo.pause();
+   }
   };
   const schedule=()=>{if(!frame)frame=requestAnimationFrame(update)};
   const measure=()=>{
    headerHeight=header?.offsetHeight??82;
+   hero?.style.setProperty("--hero-extra-distance",(videoLayer&&hero.dataset.videoFailed!=="true"?HERO_EXTRA_SVH:ZOOM_SCROLL_SVH)+"svh");
    distance=Math.max(1,(hero?.offsetHeight??0)-(scene?.offsetHeight??0));
    cards.forEach((card,index)=>{
     // A tall card scrolls to its bottom before it stays beneath the next card.
