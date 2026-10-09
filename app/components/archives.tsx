@@ -1,16 +1,61 @@
 "use client";
-import {useState} from "react";
+import {useEffect,useState} from "react";
+import useEmblaCarousel from "embla-carousel-react";
 import {Tabs,TabsList,TabsTrigger,TabsContent} from "@/components/ui/tabs";
 import {ChevronLeft,ChevronRight,Shield,Target} from "lucide-react";
 import game from "@/data/game.json";
 export function OperatorSection(){
  const [selected,setSelected]=useState("威龙");const operators=game.operators;
- const move=(step:number)=>{const index=operators.findIndex(x=>x.name===selected);setSelected(operators[(index+step+operators.length)%operators.length].name)};
+ const [carouselRef,carousel]=useEmblaCarousel({loop:true,align:"center",startIndex:operators.findIndex(o=>o.name==="威龙"),watchFocus:false,duration:25});
+ const move=(step:number)=>setSelected(previous=>{const index=operators.findIndex(x=>x.name===previous);return operators[(index+step+operators.length)%operators.length].name});
+ useEffect(()=>{
+  if(!carousel)return;
+  const select=()=>setSelected(operators[carousel.selectedScrollSnap()].name);
+  carousel.on("select",select).on("reInit",select);
+  return()=>{carousel.off("select",select).off("reInit",select)};
+ },[carousel,operators]);
+ useEffect(()=>{
+  if(carousel)carousel.scrollTo(operators.findIndex(o=>o.name===selected),window.matchMedia("(prefers-reduced-motion: reduce)").matches);
+ },[carousel,operators,selected]);
+ useEffect(()=>{
+  if(!carousel)return;
+  let total=0,last=0,blockedUntil=0;
+  const wheel=(event:WheelEvent)=>{
+   if(event.ctrlKey)return;
+   const delta=Math.abs(event.deltaX)>Math.abs(event.deltaY)?event.deltaX:event.deltaY;
+   if(!delta)return;
+   event.preventDefault();
+   const now=performance.now();
+   if(now<blockedUntil)return;
+   if(now-last>220)total=0;
+   total+=delta*(event.deltaMode===1?16:event.deltaMode===2?carousel.rootNode().clientWidth:1);last=now;
+   if(Math.abs(total)<32)return;
+   if(total>0)carousel.scrollNext();else carousel.scrollPrev();
+   total=0;blockedUntil=now+180;
+  };
+  const viewport=carousel.rootNode();
+  viewport.addEventListener("wheel",wheel,{passive:false});
+  return()=>viewport.removeEventListener("wheel",wheel);
+ },[carousel]);
  return <section id="operators" className="archives-section section-shell">
  <div className="section-label"><span>02 / 干员档案</span><span>G.T.I. OPERATOR ARCHIVE</span></div>
- <div className="section-heading"><div><p className="eyebrow">不同的专长，同一个目标</p><h2>找到你的<span>战术搭档</span></h2></div><p>17 位干员 · 四类兵种<br/><small>选择头像，了解干员与技能</small></p></div>
+ <div className="section-heading"><div><p className="eyebrow">不同的专长，同一个目标</p><h2>找到你的<span>战术搭档</span></h2></div><p>17 位干员 · 四类兵种<br/><small>滚动或拖动选择，了解干员与技能</small></p></div>
  <Tabs value={selected} onValueChange={setSelected} className="operator-tabs">
- <TabsList className="operator-list" aria-label="选择干员">{operators.map((o,i)=><TabsTrigger key={o.name} value={o.name} className="operator-tab" aria-label={"选择干员"+o.name}><img src={o.portrait} alt="" loading="lazy"/><span>{o.name}</span><small>{String(i+1).padStart(2,"0")}</small></TabsTrigger>)}</TabsList>
+ <div className="operator-carousel" aria-label="干员循环选择">
+ <button className="operator-scroll-control" onClick={()=>move(-1)} aria-label="循环选择上一位干员"><ChevronLeft size={22}/></button>
+ <div className="operator-carousel-viewport" ref={carouselRef}>
+ <TabsList className="operator-list" aria-label="选择干员" onKeyDownCapture={event=>{
+  const index=operators.findIndex(o=>o.name===selected);
+  const target=event.key==="ArrowRight"?(index+1)%operators.length:event.key==="ArrowLeft"?(index-1+operators.length)%operators.length:event.key==="Home"?0:event.key==="End"?operators.length-1:null;
+  if(target===null)return;
+  event.preventDefault();event.stopPropagation();
+  setSelected(operators[target].name);
+  // Native focus scrolling would offset Embla's looping track.
+  (carousel?.slideNodes()[target] as HTMLElement|undefined)?.focus({preventScroll:true});
+ }} >{operators.map((o,i)=><TabsTrigger key={o.name} value={o.name} className="operator-tab" aria-label={"选择干员"+o.name} onMouseDown={event=>event.preventDefault()} onClick={event=>{setSelected(o.name);event.currentTarget.focus({preventScroll:true})}}><img src={o.portrait} alt="" loading="lazy" draggable={false}/><span>{o.name}</span><small>{String(i+1).padStart(2,"0")}</small></TabsTrigger>)}</TabsList>
+ </div>
+ <button className="operator-scroll-control" onClick={()=>move(1)} aria-label="循环选择下一位干员"><ChevronRight size={22}/></button>
+ </div>
  {operators.map((o,i)=><TabsContent value={o.name} key={o.name} className="operator-panel">
  <article className="operator-stage" key={o.name}><img className="operator-art" src={o.image} alt={o.name+"人物展示"} loading="lazy"/><div className="stage-shade"/><div className="stage-grid" aria-hidden="true"/><div className="light-sweep" aria-hidden="true"/>
  <div className="operator-info"><p className="operator-number">G.T.I. / OPERATOR {String(i+1).padStart(2,"0")}</p><div className="class-badge"><img src={o.classIcon} alt=""/>{o.class}</div><h3>{o.name}</h3><p className="operator-name">{o.real_name} <span>{o.english_name}</span></p><p className="operator-background">{o.background}</p><p className="class-description"><Shield size={17}/>{o.class_description}</p></div>

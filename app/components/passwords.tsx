@@ -46,10 +46,6 @@ export function PasswordSection(){
     {door.candidates.length?door.candidates.map(c=>renderCandidate(c,entry.id+"-"+door.id+"-"+c.code,door.id==="main"?"main":"彩六联动房",entry.name)):<><div className="access-code"><span>— — — —</span><button disabled aria-label={"复制"+entry.name+door.label+"密码"}><Copy size={21}/></button></div><p className="candidate-location">密码待更新</p></>}
    </div>)}
   </article>)}</div>
-  <div className="password-source-summary" aria-label="密码来源同步状态">{SOURCES.map(source=>{
-   const state=view.sources.find(s=>s.id===source.id);
-   return <div key={source.id} className={state?.status==="error"?"source-unavailable":""}><b>{source.name}</b><span>{state?.status==="error"?"暂不可用 · 稍后自动重试":state?.status==="ready"?"已获取 "+state.entries.filter(e=>e.code).length+" 条记录":"待更新"}</span><small>{state?.fetchedAt?"抓取于 "+time(state.fetchedAt):"等待下次同步"}</small></div>;
-  })}</div>
   <div className="source-note"><span>{view.error??"按地图、门类型与密码去重；相同密码合并来源，不同密码分别保留。"}</span><span>来源：KKRB · Delta Force Codes</span></div>
   <p className="password-date-note">抓取时间与来源数据更新时间都不代表密码生效日期。KKRB 未注明更新时间的时区；较早记录已单独提示，出发前请核实。</p>
   <Toaster position="bottom-right" theme="dark"/>
