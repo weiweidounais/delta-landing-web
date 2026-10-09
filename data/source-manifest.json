@@ -1,0 +1,2196 @@
+{
+  "official": {
+    "source_url": "https://df.qq.com/cp/a20240906main/",
+    "retrieved_date": "2026-10-09",
+    "operators": [
+      {
+        "name": "旅人",
+        "real_name": "罗温·沃尔什",
+        "english_name": "Rowan",
+        "class": "支援",
+        "class_description": "支援兵有多样化的辅助手段，能以更快的速度救起同阵营友军。",
+        "class_icon_url": "https://game.gtimg.cn/images/dfm/cp/a20240906main/p4_icon2.png",
+        "background": "罗温曾是一名户外探险家，拥有丰富的野外生存、地形侦察与应急救援经验。并长期与一只名叫“四叶”的军犬共同执行任务。他们有着默契的配合，四叶可为罗温提供区域搜寻及目标追踪，罗温则可以通过针剂烟雾给敌方施加负面效果，并为小队提供持续支援。",
+        "skills": [
+          {
+            "name": "军犬协同",
+            "type": "战术装备",
+            "description": "吹响犬哨，召唤军犬协同作战。 持续期间内，军犬将主动追击范围内最近的敌方目标，接近后造成伤害并施加标记； 未发现敌人时，将跟随干员并保持警戒。",
+            "icon_url": "https://game.gtimg.cn/images/dfm/cp/a20240906main/p4_icon17_2.png",
+            "icon": "/assets/p4_icon17_2.png"
+          },
+          {
+            "name": "气雾针剂枪",
+            "type": "战术道具",
+            "description": "装备随身针剂发射器，向准星方向发射针剂。 针剂爆开后将释放持续生效的气雾，持续修复友方的异常效果，并降低范围内敌方的血量上限。",
+            "icon_url": "https://game.gtimg.cn/images/dfm/cp/a20240906main/p4_icon17_3.png",
+            "icon": "/assets/p4_icon17_3.png"
+          },
+          {
+            "name": "刺激性喷雾",
+            "type": "战术道具",
+            "description": "投掷刺激性烟雾弹，烟雾区域内的敌人将咳嗽。",
+            "icon_url": "https://game.gtimg.cn/images/dfm/cp/a20240906main/p4_icon17_4.png",
+            "icon": "/assets/p4_icon17_4.png"
+          },
+          {
+            "name": "求生专家&紧急勤务",
+            "type": "干员特长",
+            "description": "烽火地带：被技能命中的敌人将更易被军犬追踪；友方干员倒地持续时间延长；成功救援友方后，可清除其多层异常状态。",
+            "icon_url": "https://game.gtimg.cn/images/dfm/cp/a20240906main/p4_icon17_1.png",
+            "icon": "/assets/p4_icon17_1.png"
+          }
+        ],
+        "image_url": "https://game.gtimg.cn/images/dfm/cp/a20240906main/p4_img17.jpg",
+        "portrait_url": "https://game.gtimg.cn/images/dfm/cp/a20240906main/p4_m17.jpg",
+        "image": "/assets/p4_img17.jpg",
+        "portrait": "/assets/p4_m17.jpg",
+        "classIcon": "/assets/p4_icon2.png"
+      },
+      {
+        "name": "液氮",
+        "real_name": "加布里埃尔·默里尔",
+        "english_name": "gabriel",
+        "class": "工程",
+        "class_description": "工程兵是道具使用专家，可用喷枪进行切割和维修。",
+        "class_icon_url": "https://game.gtimg.cn/images/dfm/cp/a20240906main/p4_icon4.png",
+        "background": "曾任某核设施冷却系统工程师，期间设施发生重大事故。液氮因此卷入司法纠纷并被解除职务，还因此出现部分心理问题。之后重回军队服役，被调派至极地编入CBRN相关单位。",
+        "skills": [
+          {
+            "name": "连发冷凝榴弹",
+            "type": "战术装备",
+            "description": "短时间内可装备发射器，最多射出六发冷凝榴弹，爆炸造成伤害和低温影响。连续开火增加射速。",
+            "icon_url": "https://game.gtimg.cn/images/dfm/cp/a20240906main/p4_icon16_2.png",
+            "icon": "/assets/p4_icon16_2.png"
+          },
+          {
+            "name": "杜瓦冷罐",
+            "type": "战术道具",
+            "description": "投掷冷罐，落地喷出气体形成低温区域。区域内的敌人持续累积低温影响、剧烈咳嗽。可以冻住关闭的门。",
+            "icon_url": "https://game.gtimg.cn/images/dfm/cp/a20240906main/p4_icon16_3.png",
+            "icon": "/assets/p4_icon16_3.png"
+          },
+          {
+            "name": "温感追踪震撼弹",
+            "type": "战术道具",
+            "description": "投出自动追踪的震撼弹，干扰敌人的视野并标记敌人。",
+            "icon_url": "https://game.gtimg.cn/images/dfm/cp/a20240906main/p4_icon16_4.png",
+            "icon": "/assets/p4_icon16_4.png"
+          },
+          {
+            "name": "霜化反应",
+            "type": "干员特长",
+            "description": "烽火地带降低敌人的骨折抗性。",
+            "icon_url": "https://game.gtimg.cn/images/dfm/cp/a20240906main/p4_icon16_1.png",
+            "icon": "/assets/p4_icon16_1.png"
+          }
+        ],
+        "image_url": "https://game.gtimg.cn/images/dfm/cp/a20240906main/p4_img16.jpg",
+        "portrait_url": "https://game.gtimg.cn/images/dfm/cp/a20240906main/p4_m16.jpg",
+        "image": "/assets/p4_img16.jpg",
+        "portrait": "/assets/p4_m16.jpg",
+        "classIcon": "/assets/p4_icon4.png"
+      },
+      {
+        "name": "回响",
+        "real_name": "卢克·埃弗利",
+        "english_name": "Luke",
+        "class": "侦察",
+        "class_description": "侦察兵精通战场情报收集，可用侦察电台获得战区信息。",
+        "class_icon_url": "https://game.gtimg.cn/images/dfm/cp/a20240906main/p4_icon1.png",
+        "background": "声学情报专家，曾服役于海军潜艇部队。对声音和海洋了如指掌，精于改造便携声波设备。作为干员，回响对于声波情报获取和声波干扰有着独特的理解和研究。",
+        "skills": [
+          {
+            "name": "回声探测器",
+            "type": "战术道具",
+            "description": "释放探测器，该装置会周期性地对指定区域内进行探测，能够探测出区域内敌人数量，并对发出声音的敌人进行精确标记。",
+            "icon_url": "https://game.gtimg.cn/images/dfm/cp/a20240906main/p4_icon15_3.png",
+            "icon": "/assets/p4_icon15_3.png"
+          },
+          {
+            "name": "次声波干扰器",
+            "type": "战术装备",
+            "description": "投掷一个共振干扰器，对装置范围内的敌人造成干扰效果，敌人会受到减速、视野模糊、难以转向、听力下降的负面效果，并且会持续发出声音。",
+            "icon_url": "https://game.gtimg.cn/images/dfm/cp/a20240906main/p4_icon15_1.png",
+            "icon": "/assets/p4_icon15_1.png"
+          },
+          {
+            "name": "复合型闪光弹",
+            "type": "战术道具",
+            "description": "投掷一枚闪光弹，在一定时间后爆炸，对朝向闪光弹的敌人造成闪光致盲效果。",
+            "icon_url": "https://game.gtimg.cn/images/dfm/cp/a20240906main/p4_icon15_2.png",
+            "icon": "/assets/p4_icon15_2.png"
+          },
+          {
+            "name": "声音感知&区域侦测",
+            "type": "干员特长",
+            "description": "烽火地带中，增强自身的听力感知范围，并且当自身附近有敌人开火时，会将其模糊地标记在地图上。",
+            "icon_url": "https://game.gtimg.cn/images/dfm/cp/a20240906main/p4_icon15_4.png",
+            "icon": "/assets/p4_icon15_4.png"
+          }
+        ],
+        "image_url": "https://game.gtimg.cn/images/dfm/cp/a20240906main/p4_img15.jpg",
+        "portrait_url": "https://game.gtimg.cn/images/dfm/cp/a20240906main/p4_m15.jpg",
+        "image": "/assets/p4_img15.jpg",
+        "portrait": "/assets/p4_m15.jpg",
+        "classIcon": "/assets/p4_icon1.png"
+      },
+      {
+        "name": "蝶",
+        "real_name": "姓名 ：莉娜·范德梅尔",
+        "english_name": "Lina",
+        "class": "支援",
+        "class_description": "支援兵有多样化的辅助手段，能以更快的速度救起同阵营友军。",
+        "class_icon_url": "https://game.gtimg.cn/images/dfm/cp/a20240906main/p4_icon2.png",
+        "background": "蝶的医疗无人机可播撒纳米医疗粉尘，为队友回复生命值，并可以派遣救援无人机，自动救援周围倒地的队友，拥有优秀的补给作战能力。",
+        "skills": [
+          {
+            "name": "蝶式救援无人机",
+            "type": "战术装备",
+            "description": "对自身周围55米内的队友释放无人机群来救援队友；无人机会主动拦截一次爆炸物造成的伤害。",
+            "icon_url": "https://game.gtimg.cn/images/dfm/cp/a20240906main/p4_icon14_1.png",
+            "icon": "/assets/p4_icon14_1.png"
+          },
+          {
+            "name": "纳米医疗粉尘",
+            "type": "战术道具",
+            "description": "投掷一个会追踪队友的医疗无人机，治疗所在区域的所有友军，短按可切出医疗无人机，长按可使用无人机自我治疗。",
+            "icon_url": "https://game.gtimg.cn/images/dfm/cp/a20240906main/p4_icon14_2.png",
+            "icon": "/assets/p4_icon14_2.png"
+          },
+          {
+            "name": "遥控烟雾",
+            "type": "战术道具",
+            "description": "投掷一颗通过手势感应装置引导的烟雾弹。长按技能键，可以引导烟雾弹的飞行方向。",
+            "icon_url": "https://game.gtimg.cn/images/dfm/cp/a20240906main/p4_icon14_3.png",
+            "icon": "/assets/p4_icon14_3.png"
+          },
+          {
+            "name": "体征监测&救援强化",
+            "type": "干员特长",
+            "description": "烽火地带】可观察队友的剪影和健康状态并延长其倒地和濒死倒计时【",
+            "icon_url": "https://game.gtimg.cn/images/dfm/cp/a20240906main/p4_icon14_4.png",
+            "icon": "/assets/p4_icon14_4.png"
+          }
+        ],
+        "image_url": "https://game.gtimg.cn/images/dfm/cp/a20240906main/p4_img14.jpg",
+        "portrait_url": "https://game.gtimg.cn/images/dfm/cp/a20240906main/p4_m14.png",
+        "image": "/assets/operator-蝶.jpg",
+        "portrait": "/assets/p4_m14.png",
+        "classIcon": "/assets/p4_icon2.png"
+      },
+      {
+        "name": "比特",
+        "real_name": "拉希德·拉哈尔",
+        "english_name": "Rashid",
+        "class": "工程",
+        "class_description": "工程兵是道具使用专家，可用喷枪进行切割和维修。",
+        "class_icon_url": "https://game.gtimg.cn/images/dfm/cp/a20240906main/p4_icon4.png",
+        "background": "比特，首位阿萨拉阵营干员，擅长操纵各种机械，自己研发设计了哨兵蜘蛛“T仔”，并能够进行自动巡逻，在探测到敌方目标后将切换至追踪模式，对目标的行动进行限制。",
+        "skills": [
+          {
+            "name": "巡猎蜘蛛",
+            "type": "战术道具",
+            "description": "投掷一个可自行前进的机械巡猎蜘蛛，其会沿着指定方向巡逻，巡逻中发现敌人会进行追猎并发射能够禁锢敌人的捕网，被捕网命中敌人的移动能力会大幅受限并且无法开镜与使用干员道具。如果有敌人处于腐蚀状态，巡猎蜘蛛会直接追踪敌人。",
+            "icon_url": "https://game.gtimg.cn/images/dfm/cp/a20240906main/p4_icon13_4.png",
+            "icon": "/assets/p4_icon13_4.png"
+          },
+          {
+            "name": "哨兵母巢",
+            "type": "战术装备",
+            "description": "部署一个包含三只哨兵蜘蛛的机械母巢，哨兵蜘蛛会接近追踪敌人并爆炸，对敌人造成伤害并附着腐蚀效果，增加敌人受到的子弹伤害，被腐蚀的敌人进入智能烟雾中会被标记。",
+            "icon_url": "https://game.gtimg.cn/images/dfm/cp/a20240906main/p4_icon13_2.png",
+            "icon": "/assets/p4_icon13_2.png"
+          },
+          {
+            "name": "智能烟雾地雷",
+            "type": "战术道具",
+            "description": "战术道具-智能烟雾地雷：部署可黏着在硬表面的智能烟雾，烟雾会被附近的敌方单位触发，减速进入其中的敌人。被腐蚀的敌人进入智能烟雾中会被标记。",
+            "icon_url": "https://game.gtimg.cn/images/dfm/cp/a20240906main/p4_icon13_1.png",
+            "icon": "/assets/p4_icon13_1.png"
+          },
+          {
+            "name": "防守尖兵",
+            "type": "干员特长",
+            "description": "在自身的部署物附近时获得提高武器操控速度的增益效果。",
+            "icon_url": "https://game.gtimg.cn/images/dfm/cp/a20240906main/p4_icon13_3.png",
+            "icon": "/assets/p4_icon13_3.png"
+          }
+        ],
+        "image_url": "https://game.gtimg.cn/images/dfm/cp/a20240906main/p4_img13.jpg",
+        "portrait_url": "https://game.gtimg.cn/images/dfm/cp/a20240906main/p4_m13.png",
+        "image": "/assets/operator-比特.jpg",
+        "portrait": "/assets/p4_m13.png",
+        "classIcon": "/assets/p4_icon4.png"
+      },
+      {
+        "name": "银翼",
+        "real_name": "兰登·哈里森",
+        "english_name": "Landon",
+        "class": "侦察",
+        "class_description": "侦察兵精通战场情报收集，可用侦察电台获得战区信息。",
+        "class_icon_url": "https://game.gtimg.cn/images/dfm/cp/a20240906main/p4_icon1.png",
+        "background": "银翼，侦察兵种，擅长使用电子信息设备，其猎鹰无人机能够有效追踪视野内所有敌人的位置。战术装备为蜂鸟间谍摄像头，可破解敌方踪迹，获取敌方干员、装备和位置信息，拥有优秀的信息作战和情报获取能力。",
+        "skills": [
+          {
+            "name": "“蜂鸟”间谍摄像头",
+            "type": "战术道具",
+            "description": "通过敌方踪迹或猎鹰无人机释放一个黏附在敌人头盔上的间谍摄像头，摄像头会持续标记敌人和其附近队友的踪迹。兰登可以主动切换到摄像头视角进行观察。",
+            "icon_url": "https://game.gtimg.cn/images/dfm/cp/a20240906main/p4_icon12_2.png",
+            "icon": "/assets/p4_icon12_2.png"
+          },
+          {
+            "name": "“猎鹰”仿生无人机",
+            "type": "战术道具",
+            "description": "释放一个鸟型无人机，每过1秒标记无人机视野内的所有敌人的位置。",
+            "icon_url": "https://game.gtimg.cn/images/dfm/cp/a20240906main/p4_icon12_3.png",
+            "icon": "/assets/p4_icon12_3.png"
+          },
+          {
+            "name": "脉冲手雷",
+            "type": "干员特长",
+            "description": "投掷一枚三秒后爆炸的脉冲手雷，手雷会使电子物品失效，包括武器上的红点瞄具、激光等。被脉冲手雷命中时，手环会短暂放电。",
+            "icon_url": "https://game.gtimg.cn/images/dfm/cp/a20240906main/p4_icon12_4.png",
+            "icon": "/assets/p4_icon12_4.png"
+          },
+          {
+            "name": "踪迹探查&威胁侦测",
+            "type": "战术装备",
+            "description": "烽火地带中，兰登可以调查地上的脚印或被搜索过的容器，获取踪迹留下者的干员、装备、相对位置等信息。在大战场中，兰登被瞄准时，该方向的屏幕边缘会亮起。威胁提示发现敌人时，可直接对其释放蜂鸟间谍摄像头。",
+            "icon_url": "https://game.gtimg.cn/images/dfm/cp/a20240906main/p4_icon12_1.png",
+            "icon": "/assets/p4_icon12_1.png"
+          }
+        ],
+        "image_url": "https://game.gtimg.cn/images/dfm/cp/a20240906main/p4_img12.jpg",
+        "portrait_url": "https://game.gtimg.cn/images/dfm/cp/a20240906main/p4_m12.png",
+        "image": "/assets/operator-银翼.jpg",
+        "portrait": "/assets/p4_m12.png",
+        "classIcon": "/assets/p4_icon1.png"
+      },
+      {
+        "name": "疾风",
+        "real_name": "克莱尔·安·拜尔斯",
+        "english_name": "Claire",
+        "class": "突击",
+        "class_description": "突击兵有更强的战斗能力，在举镜瞄准状态下拥有更快的移动速度。",
+        "class_icon_url": "https://game.gtimg.cn/images/dfm/cp/a20240906main/p4_icon3.png",
+        "background": "疾风是集高机动移动、缴械突入为一体的突击型干员。她可以在交战中提升自己的移动与翻滚速度，并使用钻墙电钻缴械掩体后的敌人，在战斗时还可以在原地布置锚点，进行闪回和自救，让敌人难以捕捉。",
+        "skills": [
+          {
+            "name": "紧急回避装置",
+            "type": "干员特长",
+            "description": "原地发射锚点，并通过安全绳连结身体，再次激活可通过安全绳将自己拉回锚点。技能激活期间若受到致命伤害，返回锚点可进行自救。",
+            "icon_url": "https://game.gtimg.cn/images/dfm/cp/a20240906main/p4_icon11_4.png",
+            "icon": "/assets/p4_icon11_4.png"
+          },
+          {
+            "name": "战术翻滚",
+            "type": "战术道具",
+            "description": "借助背部的辅助脊椎可以进行8个方向的快速翻滚，翻滚时会激活辅助脊椎，增加移动速度。",
+            "icon_url": "https://game.gtimg.cn/images/dfm/cp/a20240906main/p4_icon11_2.png",
+            "icon": "/assets/p4_icon11_2.png"
+          },
+          {
+            "name": "钻墙电刺",
+            "type": "战术道具",
+            "description": "投掷电钻，可穿透掩体发射导电粉末并释放电击，电击可以麻痹敌人并击飞敌人手中的武器。",
+            "icon_url": "https://game.gtimg.cn/images/dfm/cp/a20240906main/p4_icon11_3.png",
+            "icon": "/assets/p4_icon11_3.png"
+          },
+          {
+            "name": "爆发型辅助脊椎",
+            "type": "战术装备",
+            "description": "被子弹击中或有子弹从身边飞过时增加移动速度，常驻加速游泳效果。",
+            "icon_url": "https://game.gtimg.cn/images/dfm/cp/a20240906main/p4_icon11_1.png",
+            "icon": "/assets/p4_icon11_1.png"
+          }
+        ],
+        "image_url": "https://game.gtimg.cn/images/dfm/cp/a20240906main/p4_img11.jpg",
+        "portrait_url": "https://game.gtimg.cn/images/dfm/cp/a20240906main/p4_m11.png",
+        "image": "/assets/operator-疾风.jpg",
+        "portrait": "/assets/p4_m11.png",
+        "classIcon": "/assets/p4_icon3.png"
+      },
+      {
+        "name": "无名",
+        "real_name": "埃利·德·蒙贝尔",
+        "english_name": "Hélie",
+        "class": "突击",
+        "class_description": "突击兵有更强的战斗能力，在举镜瞄准状态下拥有更快的移动速度。",
+        "class_icon_url": "https://game.gtimg.cn/images/dfm/cp/a20240906main/p4_icon3.png",
+        "background": "无名曾接受过来自哈夫克的军事训练，也有丰富的佣兵经验，擅长信息干扰，精通多种战斗技巧。他是集单兵绕后、追踪伤害、闪光突破为一体的干员，对隐蔽突袭作战造诣极深，能在战场上出其不意地刺入敌方防御空缺。",
+        "skills": [
+          {
+            "name": "静默潜袭",
+            "type": "干员特长",
+            "description": "启动声波干扰器与信号干扰器，缩小自身移动时的声音传播范围，同时使敌方的侦察道具无法侦察到无名的具体位置。",
+            "icon_url": "https://game.gtimg.cn/images/dfm/cp/a20240906main/p4_icon10_4.png",
+            "icon": "/assets/p4_icon10_4.png"
+          },
+          {
+            "name": "旋刃飞行器",
+            "type": "战术道具",
+            "description": "旋刃飞行器会锁定前方的敌人，锁定后丢出即可自动追踪敌人并爆开，释放内部的刀片，伤害并减速敌人，同时附加流血状态。",
+            "icon_url": "https://game.gtimg.cn/images/dfm/cp/a20240906main/p4_icon10_2.png",
+            "icon": "/assets/p4_icon10_2.png"
+          },
+          {
+            "name": "突破型闪光弹",
+            "type": "战术道具",
+            "description": "向前投掷一颗特制的突破型闪光弹，该闪光弹会在接触到墙体后短时间内爆炸，对所有面朝闪光的附近敌人进行闪光震撼。",
+            "icon_url": "https://game.gtimg.cn/images/dfm/cp/a20240906main/p4_icon10_3.png",
+            "icon": "/assets/p4_icon10_3.png"
+          },
+          {
+            "name": "重伤延滞",
+            "type": "战术装备",
+            "description": "被无名击伤的敌人需要花更长时间使用药品，被击倒的敌人也需要更长的时间才能被救起。",
+            "icon_url": "https://game.gtimg.cn/images/dfm/cp/a20240906main/p4_icon10_1.png",
+            "icon": "/assets/p4_icon10_1.png"
+          }
+        ],
+        "image_url": "https://game.gtimg.cn/images/dfm/cp/a20240906main/p4_img10.jpg",
+        "portrait_url": "https://game.gtimg.cn/images/dfm/cp/a20240906main/p4_m10.png",
+        "image": "/assets/operator-无名.jpg",
+        "portrait": "/assets/p4_m10.png",
+        "classIcon": "/assets/p4_icon3.png"
+      },
+      {
+        "name": "深蓝",
+        "real_name": "阿列克谢·彼得罗夫",
+        "english_name": "Alexei",
+        "class": "工程",
+        "class_description": "工程兵是道具使用专家，可用喷枪进行切割和维修。",
+        "class_icon_url": "https://game.gtimg.cn/images/dfm/cp/a20240906main/p4_icon4.png",
+        "background": "阿列克谢·彼得罗夫的作战经验非常丰富，并且耐力和力量出众，他的全面防护装备是帮助小队推进的利器。有他加入阿萨拉地区的行动，我方伤亡率会大大降低，因为守护每一个人是他的本能。",
+        "skills": [
+          {
+            "name": "防爆套装",
+            "type": "战术道具",
+            "description": "装备重型防爆套装和全身盾，大幅降低受到的所有伤害。防爆盾的观察窗可被破坏。防爆盾攻击可以击倒敌人或击回投掷物。",
+            "icon_url": "https://game.gtimg.cn/images/dfm/cp/a20240906main/p4_icon9_2.png",
+            "icon": "/assets/p4_icon9_2.png"
+          },
+          {
+            "name": "多功能钩爪枪",
+            "type": "战术道具",
+            "description": "发射钩爪，命中后拉回敌人，倒地队友或装备箱。钩爪枪的绳索可被破坏。",
+            "icon_url": "https://game.gtimg.cn/images/dfm/cp/a20240906main/p4_icon9_3.png",
+            "icon": "/assets/p4_icon9_3.png"
+          },
+          {
+            "name": "刀片刺网手雷",
+            "type": "干员特长",
+            "description": "落地后生成刀片刺网，敌人在铁丝网内移动时，会减速，受到伤害并发出声音。可被爆炸和近战摧毁。",
+            "icon_url": "https://game.gtimg.cn/images/dfm/cp/a20240906main/p4_icon9_4.png",
+            "icon": "/assets/p4_icon9_4.png"
+          },
+          {
+            "name": "后方防护",
+            "type": "战术装备",
+            "description": "防爆盾未使用时会挂在角色后部，抵挡从后方射来的子弹。",
+            "icon_url": "https://game.gtimg.cn/images/dfm/cp/a20240906main/p4_icon9_1.png",
+            "icon": "/assets/p4_icon9_1.png"
+          }
+        ],
+        "image_url": "https://game.gtimg.cn/images/dfm/cp/a20240906main/p4_img9.jpg",
+        "portrait_url": "https://game.gtimg.cn/images/dfm/cp/a20240906main/p4_m9.png",
+        "image": "/assets/operator-深蓝.jpg",
+        "portrait": "/assets/p4_m9.png",
+        "classIcon": "/assets/p4_icon4.png"
+      },
+      {
+        "name": "蛊",
+        "real_name": "佐娅·庞琴科娃",
+        "english_name": "Zoya",
+        "class": "支援",
+        "class_description": "支援兵有多样化的辅助手段，能以更快的速度救起同阵营友军。",
+        "class_icon_url": "https://game.gtimg.cn/images/dfm/cp/a20240906main/p4_icon2.png",
+        "background": "佐娅・庞琴科娃出身技术研究领域，可战斗热情丝毫不输作战人员。她生于军人家庭，研究项目都围绕辅助作战展开，承接作战任务也极为积极。佐娅能将现代神经化学与智能无人机作战完美融合，是一名独特且令人生畏的支援干员 。",
+        "skills": [
+          {
+            "name": "“流荧”集群系统",
+            "type": "干员特长",
+            "description": "释放无人机群，干扰路线上的敌方单位使其降低听觉、视觉并短暂降低生命值上限",
+            "icon_url": "https://game.gtimg.cn/images/dfm/cp/a20240906main/p4_icon8_4.png",
+            "icon": "/assets/p4_icon8_4.png"
+          },
+          {
+            "name": "肾上腺素激活",
+            "type": "战术道具",
+            "description": "释放无人机为身边友方提供枪械控制能力增益",
+            "icon_url": "https://game.gtimg.cn/images/dfm/cp/a20240906main/p4_icon8_3.png",
+            "icon": "/assets/p4_icon8_3.png"
+          },
+          {
+            "name": "致盲毒雾",
+            "type": "战术道具",
+            "description": "投掷一枚致盲瓦斯弹，可使范围内的敌方致盲",
+            "icon_url": "https://game.gtimg.cn/images/dfm/cp/a20240906main/p4_icon8_2.png",
+            "icon": "/assets/p4_icon8_2.png"
+          },
+          {
+            "name": "高效治疗",
+            "type": "战术装备",
+            "description": "使友方治疗时间缩短",
+            "icon_url": "https://game.gtimg.cn/images/dfm/cp/a20240906main/p4_icon8_1.png",
+            "icon": "/assets/p4_icon8_1.png"
+          }
+        ],
+        "image_url": "https://game.gtimg.cn/images/dfm/cp/a20240906main/p4_img8.jpg",
+        "portrait_url": "https://game.gtimg.cn/images/dfm/cp/a20240906main/p4_m8.png",
+        "image": "/assets/operator-蛊.jpg",
+        "portrait": "/assets/p4_m8.png",
+        "classIcon": "/assets/p4_icon2.png"
+      },
+      {
+        "name": "骇爪",
+        "real_name": "麦晓雯",
+        "english_name": "Mai",
+        "class": "侦察",
+        "class_description": "侦察兵精通战场情报收集，可用侦察电台获得战区信息。",
+        "class_icon_url": "https://game.gtimg.cn/images/dfm/cp/a20240906main/p4_icon1.png",
+        "background": "作为顶尖的电子攻防专家，麦晓雯被G.T.I.破例特招。她多次申请前往阿萨拉地区执行任务，个中缘由似乎与她的过去息息相关。",
+        "skills": [
+          {
+            "name": "信号破译器",
+            "type": "战术装备",
+            "description": "使用破译器周期性扫描前方60m最多六个敌方电子信号，并在隐形眼镜显示这些信号的追踪轨迹线。距离最近的轨迹线会显示为红色。敌方收到的警示等级会随骇爪距离接近而增强",
+            "icon_url": "https://game.gtimg.cn/images/dfm/cp/a20240906main/p4_icon1_1.png",
+            "icon": "/assets/p4_icon1_1.png"
+          },
+          {
+            "name": "闪光巡飞器",
+            "type": "战术道具",
+            "description": "丢出向前飞行的巡飞器，用闪光灯致盲范围内的敌人。用准星选中破译器的轨迹线时，巡飞器会跟随选中的黄色轨迹线飞行",
+            "icon_url": "https://game.gtimg.cn/images/dfm/cp/a20240906main/p4_icon1_2.png",
+            "icon": "/assets/p4_icon1_2.png"
+          },
+          {
+            "name": "数据飞刀",
+            "type": "战术道具",
+            "description": "投掷数据飞刀，停止时会骇入附近10m的电子设备并使其暂时失效。直接命中敌人时会造成大量伤害",
+            "icon_url": "https://game.gtimg.cn/images/dfm/cp/a20240906main/p4_icon1_3.png",
+            "icon": "/assets/p4_icon1_3.png"
+          },
+          {
+            "name": "隐匿消声",
+            "type": "干员特长",
+            "description": "静步走路和蹲下移动速度更快，同时发出的声音也更小",
+            "icon_url": "https://game.gtimg.cn/images/dfm/cp/a20240906main/p4_icon1_4.png",
+            "icon": "/assets/p4_icon1_4.png"
+          }
+        ],
+        "image_url": "https://game.gtimg.cn/images/dfm/cp/a20240906main/p4_img1.jpg",
+        "portrait_url": "https://game.gtimg.cn/images/dfm/cp/a20240906main/p4_m1.png",
+        "image": "/assets/operator-骇爪.jpg",
+        "portrait": "/assets/p4_m1.png",
+        "classIcon": "/assets/p4_icon1.png"
+      },
+      {
+        "name": "威龙",
+        "real_name": "王宇昊",
+        "english_name": "Wang",
+        "class": "突击",
+        "class_description": "突击兵有更强的战斗能力，在举镜瞄准状态下拥有更快的移动速度。",
+        "class_icon_url": "https://game.gtimg.cn/images/dfm/cp/a20240906main/p4_icon3.png",
+        "background": "王宇昊曾经所接受的训练与常规作战人员不同，他的身体素质与平衡能力和反应能力都是万里挑一，他的信念感和使命感更是G.T.I.重视他的原因。",
+        "skills": [
+          {
+            "name": "虎蹲炮",
+            "type": "战术装备",
+            "description": "发射压缩空气弹，爆炸时将附近的敌人击倒在地",
+            "icon_url": "https://game.gtimg.cn/images/dfm/cp/a20240906main/p4_icon2_1.png",
+            "icon": "/assets/p4_icon2_1.png"
+          },
+          {
+            "name": "动力推进",
+            "type": "战术道具",
+            "description": "激活动能辅助装置，朝指定方向进行推进。击倒敌人时可减少冷却时间",
+            "icon_url": "https://game.gtimg.cn/images/dfm/cp/a20240906main/p4_icon2_2.png",
+            "icon": "/assets/p4_icon2_2.png"
+          },
+          {
+            "name": "磁吸炸弹",
+            "type": "战术道具",
+            "description": "投掷能吸附在硬表面上的大威力炸弹，倒计时结束后爆炸",
+            "icon_url": "https://game.gtimg.cn/images/dfm/cp/a20240906main/p4_icon2_3.png",
+            "icon": "/assets/p4_icon2_3.png"
+          },
+          {
+            "name": "动能辅助系统",
+            "type": "干员特长",
+            "description": "使用技能或从高处坠落时，短暂增加系统功率，减少坠落伤害并增加移动速度",
+            "icon_url": "https://game.gtimg.cn/images/dfm/cp/a20240906main/p4_icon2_4.png",
+            "icon": "/assets/p4_icon2_4.png"
+          }
+        ],
+        "image_url": "https://game.gtimg.cn/images/dfm/cp/a20240906main/p4_img2.jpg",
+        "portrait_url": "https://game.gtimg.cn/images/dfm/cp/a20240906main/p4_m2.png",
+        "image": "/assets/operator-威龙.jpg",
+        "portrait": "/assets/p4_m2.png",
+        "classIcon": "/assets/p4_icon3.png"
+      },
+      {
+        "name": "乌鲁鲁",
+        "real_name": "大卫·费莱尔",
+        "english_name": "David",
+        "class": "工程",
+        "class_description": "工程兵是道具使用专家，可用喷枪进行切割和维修。",
+        "class_icon_url": "https://game.gtimg.cn/images/dfm/cp/a20240906main/p4_icon4.png",
+        "background": "大卫·费莱尔在退役后被G.T.I.重新招募。他的作战风格狂放勇猛，但同时也能够保证守护和突进二者并存。",
+        "skills": [
+          {
+            "name": "巡飞弹",
+            "type": "战术装备",
+            "description": "开镜后发射一枚图像制导巡飞弹，爆炸时会额外霰射出四枚炸弹。腰射时，巡飞弹会启用预设制导",
+            "icon_url": "https://game.gtimg.cn/images/dfm/cp/a20240906main/p4_icon3_1.png",
+            "icon": "/assets/p4_icon3_1.png"
+          },
+          {
+            "name": "速凝掩体",
+            "type": "战术道具",
+            "description": "投掷出快速凝固混凝土喷射系统，生成能够阻挡伤害的掩体",
+            "icon_url": "https://game.gtimg.cn/images/dfm/cp/a20240906main/p4_icon3_2.png",
+            "icon": "/assets/p4_icon3_2.png"
+          },
+          {
+            "name": "复合型燃烧弹",
+            "type": "战术道具",
+            "description": "投掷一枚接触地面时爆炸的燃烧弹，能快速烧毁速凝掩体",
+            "icon_url": "https://game.gtimg.cn/images/dfm/cp/a20240906main/p4_icon3_3.png",
+            "icon": "/assets/p4_icon3_3.png"
+          },
+          {
+            "name": "久经沙场",
+            "type": "干员特长",
+            "description": "对骨折和兵种装备造成的减速效果拥有更强的抗性",
+            "icon_url": "https://game.gtimg.cn/images/dfm/cp/a20240906main/p4_icon3_4.png",
+            "icon": "/assets/p4_icon3_4.png"
+          }
+        ],
+        "image_url": "https://game.gtimg.cn/images/dfm/cp/a20240906main/p4_img3.jpg",
+        "portrait_url": "https://game.gtimg.cn/images/dfm/cp/a20240906main/p4_m3.png",
+        "image": "/assets/operator-乌鲁鲁.jpg",
+        "portrait": "/assets/p4_m3.png",
+        "classIcon": "/assets/p4_icon4.png"
+      },
+      {
+        "name": "露娜",
+        "real_name": "金卢娜",
+        "english_name": "Luna",
+        "class": "侦察",
+        "class_description": "侦察兵精通战场情报收集，可用侦察电台获得战区信息。",
+        "class_icon_url": "https://game.gtimg.cn/images/dfm/cp/a20240906main/p4_icon1.png",
+        "background": "金卢娜是一名拥有出色侦察能力的特种作战人员。作为前情报官与职业运动员，她在信息收集与分析和箭术的把控方面无人能出其右。",
+        "skills": [
+          {
+            "name": "侦察箭矢",
+            "type": "战术装备",
+            "description": "使用弓射出侦查箭矢，暴露箭矢下方的敌人，并在轨迹上留下探测移动生物的微型传感器",
+            "icon_url": "https://game.gtimg.cn/images/dfm/cp/a20240906main/p4_icon4_1.png",
+            "icon": "/assets/p4_icon4_1.png"
+          },
+          {
+            "name": "电击箭矢",
+            "type": "战术道具",
+            "description": "使用弓射出电击箭矢，箭头产生的电流会持续造成伤害",
+            "icon_url": "https://game.gtimg.cn/images/dfm/cp/a20240906main/p4_icon4_2.png",
+            "icon": "/assets/p4_icon4_2.png"
+          },
+          {
+            "name": "增强型破片手雷",
+            "type": "战术道具",
+            "description": "破片手雷，能较好地破坏护甲和裸露的四肢",
+            "icon_url": "https://game.gtimg.cn/images/dfm/cp/a20240906main/p4_icon4_3.png",
+            "icon": "/assets/p4_icon4_3.png"
+          },
+          {
+            "name": "敌情分析",
+            "type": "干员特长",
+            "description": "受到露娜伤害的敌方目标会被短暂标记",
+            "icon_url": "https://game.gtimg.cn/images/dfm/cp/a20240906main/p4_icon4_4.png",
+            "icon": "/assets/p4_icon4_4.png"
+          }
+        ],
+        "image_url": "https://game.gtimg.cn/images/dfm/cp/a20240906main/p4_img4.jpg",
+        "portrait_url": "https://game.gtimg.cn/images/dfm/cp/a20240906main/p4_m4.png",
+        "image": "/assets/operator-露娜.jpg",
+        "portrait": "/assets/p4_m4.png",
+        "classIcon": "/assets/p4_icon1.png"
+      },
+      {
+        "name": "蜂医",
+        "real_name": "罗伊·斯米",
+        "english_name": "Roy",
+        "class": "支援",
+        "class_description": "支援兵有多样化的辅助手段，能以更快的速度救起同阵营友军。",
+        "class_icon_url": "https://game.gtimg.cn/images/dfm/cp/a20240906main/p4_icon2.png",
+        "background": "罗伊·斯米是一名天生的军医，他有着生命至上的信念，专业的医疗支援能力，以及改变自己的决心。",
+        "skills": [
+          {
+            "name": "激素枪",
+            "type": "战术装备",
+            "description": "装备发射多目标追踪子弹的激素枪，可缓慢治疗友军并抑制其疼痛感受。开镜时，仅会锁定一个目标",
+            "icon_url": "https://game.gtimg.cn/images/dfm/cp/a20240906main/p4_icon5_1.png",
+            "icon": "/assets/p4_icon5_1.png"
+          },
+          {
+            "name": "烟幕",
+            "type": "战术道具",
+            "description": "控制手势感应无人机向前飞行并喷射烟幕。长按开火键引导无人机转向",
+            "icon_url": "https://game.gtimg.cn/images/dfm/cp/a20240906main/p4_icon5_2.png",
+            "icon": "/assets/p4_icon5_2.png"
+          },
+          {
+            "name": "蜂巢科技烟雾弹",
+            "type": "战术道具",
+            "description": "投掷蜂巢烟雾弹，烟雾被激素枪命中时可被染色为治疗烟雾",
+            "icon_url": "https://game.gtimg.cn/images/dfm/cp/a20240906main/p4_icon5_3.png",
+            "icon": "/assets/p4_icon5_3.png"
+          },
+          {
+            "name": "专业救援",
+            "type": "干员特长",
+            "description": "烽火地带中能够移除血量上限减少的负面效果",
+            "icon_url": "https://game.gtimg.cn/images/dfm/cp/a20240906main/p4_icon5_4.png",
+            "icon": "/assets/p4_icon5_4.png"
+          }
+        ],
+        "image_url": "https://game.gtimg.cn/images/dfm/cp/a20240906main/p4_img5.jpg",
+        "portrait_url": "https://game.gtimg.cn/images/dfm/cp/a20240906main/p4_m5.png",
+        "image": "/assets/operator-蜂医.jpg",
+        "portrait": "/assets/p4_m5.png",
+        "classIcon": "/assets/p4_icon2.png"
+      },
+      {
+        "name": "红狼",
+        "real_name": "凯·席尔瓦",
+        "english_name": "Kai",
+        "class": "突击",
+        "class_description": "突击兵有更强的战斗能力，在举镜瞄准状态下拥有更快的移动速度。",
+        "class_icon_url": "https://game.gtimg.cn/images/dfm/cp/a20240906main/p4_icon3.png",
+        "background": "凯·席尔瓦少校的作战经验丰富，并且多次执行海外派驻任务。在北非的任务中负伤修养之后，他正式被G.T.I.招募，并且成为G.T.I.研制的单兵外骨骼系统的首个使用者",
+        "skills": [
+          {
+            "name": "动力外骨骼",
+            "type": "战术装备",
+            "description": "激活腕部启动器让外骨骼功率超载，加快冲刺移动速度。击倒敌人时会恢复生命值并增加持续时间",
+            "icon_url": "https://game.gtimg.cn/images/dfm/cp/a20240906main/p4_icon6_1.png",
+            "icon": "/assets/p4_icon6_1.png"
+          },
+          {
+            "name": "三联装手炮",
+            "type": "战术道具",
+            "description": "装备三联装发射器，通过食指拉环发射爆炸榴弹。命中载具时可吸附在载具上",
+            "icon_url": "https://game.gtimg.cn/images/dfm/cp/a20240906main/p4_icon6_2.png",
+            "icon": "/assets/p4_icon6_2.png"
+          },
+          {
+            "name": "突破型烟雾弹",
+            "type": "战术道具",
+            "description": "低装药型突破用烟雾弹，爆炸后生成会快速消散的烟雾",
+            "icon_url": "https://game.gtimg.cn/images/dfm/cp/a20240906main/p4_icon6_3.png",
+            "icon": "/assets/p4_icon6_3.png"
+          },
+          {
+            "name": "战术滑铲",
+            "type": "干员特长",
+            "description": "利用外骨骼进行快速战术滑铲",
+            "icon_url": "https://game.gtimg.cn/images/dfm/cp/a20240906main/p4_icon6_4.png",
+            "icon": "/assets/p4_icon6_4.png"
+          }
+        ],
+        "image_url": "https://game.gtimg.cn/images/dfm/cp/a20240906main/p4_img6.jpg",
+        "portrait_url": "https://game.gtimg.cn/images/dfm/cp/a20240906main/p4_m6.png",
+        "image": "/assets/operator-红狼.jpg",
+        "portrait": "/assets/p4_m6.png",
+        "classIcon": "/assets/p4_icon3.png"
+      },
+      {
+        "name": "牧羊人",
+        "real_name": "泰瑞·缪萨",
+        "english_name": "Terry",
+        "class": "工程",
+        "class_description": "工程兵是道具使用专家，可用喷枪进行切割和维修。",
+        "class_icon_url": "https://game.gtimg.cn/images/dfm/cp/a20240906main/p4_icon4.png",
+        "background": "泰瑞·缪萨不光是一名工程人员，更是团队的粘合剂。他对于每个队员都有充分的了解，用他自己的话来说“关注你的敌人，但更要关注你的朋友。”",
+        "skills": [
+          {
+            "name": "声波震慑",
+            "type": "战术装备",
+            "description": "向前部署声波无人机，压制无人机30m半径内的敌方，并影响声压减少敌方武器射速。无人机会摧毁与其共振的敌方声波设备，并干扰电子侦察设备",
+            "icon_url": "https://game.gtimg.cn/images/dfm/cp/a20240906main/p4_icon7_1.png",
+            "icon": "/assets/p4_icon7_1.png"
+          },
+          {
+            "name": "声波陷阱",
+            "type": "战术装备",
+            "description": "部署可黏着在硬表面的声波陷阱，陷阱会被4m内的敌方单位触发，触发时对更大范围内的敌人造成伤害和减速效果",
+            "icon_url": "https://game.gtimg.cn/images/dfm/cp/a20240906main/p4_icon7_2.png",
+            "icon": "/assets/p4_icon7_2.png"
+          },
+          {
+            "name": "增强型破片手雷",
+            "type": "战术道具",
+            "description": "防御型破片手雷，能较好地破坏护甲和裸露的四肢",
+            "icon_url": "https://game.gtimg.cn/images/dfm/cp/a20240906main/p4_icon7_3.png",
+            "icon": "/assets/p4_icon7_3.png"
+          },
+          {
+            "name": "减振防御",
+            "type": "干员特长",
+            "description": "利用手部设备输出反相位声波，降低受到的爆炸冲击伤害",
+            "icon_url": "https://game.gtimg.cn/images/dfm/cp/a20240906main/p4_icon7_4.png",
+            "icon": "/assets/p4_icon7_4.png"
+          }
+        ],
+        "image_url": "https://game.gtimg.cn/images/dfm/cp/a20240906main/p4_img7.jpg",
+        "portrait_url": "https://game.gtimg.cn/images/dfm/cp/a20240906main/p4_m7.png",
+        "image": "/assets/operator-牧羊人.jpg",
+        "portrait": "/assets/p4_m7.png",
+        "classIcon": "/assets/p4_icon4.png"
+      }
+    ],
+    "weapons": [
+      {
+        "name": "M7战斗步枪",
+        "description": "M7是一款新式步枪，使用6.8x51mm全威力弹药。",
+        "image_url": "https://game.gtimg.cn/images/dfm/cp/a20240906main/p5_img1.jpg",
+        "thumbnail_image_url": "https://game.gtimg.cn/images/dfm/cp/a20240906main/p5_img1_2.png",
+        "image": "/assets/p5_img1.jpg",
+        "thumbnail": "/assets/p5_img1_2.png"
+      },
+      {
+        "name": "Vector冲锋枪",
+        "description": ".45口径的全自动冲锋枪，超高射速可以在近距离表现出强大爆发力。",
+        "image_url": "https://game.gtimg.cn/images/dfm/cp/a20240906main/p5_img2.jpg",
+        "thumbnail_image_url": "https://game.gtimg.cn/images/dfm/cp/a20240906main/p5_img2_2.png",
+        "image": "/assets/p5_img2.jpg",
+        "thumbnail": "/assets/p5_img2_2.png"
+      },
+      {
+        "name": "M870霰弹枪",
+        "description": "经典可靠的12号口径泵动式散弹枪，每次发射8颗弹丸。",
+        "image_url": "https://game.gtimg.cn/images/dfm/cp/a20240906main/p5_img3.jpg",
+        "thumbnail_image_url": "https://game.gtimg.cn/images/dfm/cp/a20240906main/p5_img3_2.png",
+        "image": "/assets/p5_img3.jpg",
+        "thumbnail": "/assets/p5_img3_2.png"
+      },
+      {
+        "name": "PKM通用机枪",
+        "description": "全自动机枪，采用7.62x54mmR全威力弹药，中等射速且具备强大压制力。",
+        "image_url": "https://game.gtimg.cn/images/dfm/cp/a20240906main/p5_img4.jpg",
+        "thumbnail_image_url": "https://game.gtimg.cn/images/dfm/cp/a20240906main/p5_img4_2.png",
+        "image": "/assets/p5_img4.jpg",
+        "thumbnail": "/assets/p5_img4_2.png"
+      },
+      {
+        "name": "SR-25射手步枪",
+        "description": "采用AR系统的7.62×51mm半自动步枪，人机工效上乘，精准度不俗。",
+        "image_url": "https://game.gtimg.cn/images/dfm/cp/a20240906main/p5_img5.jpg",
+        "thumbnail_image_url": "https://game.gtimg.cn/images/dfm/cp/a20240906main/p5_img5_2.png",
+        "image": "/assets/p5_img5.jpg",
+        "thumbnail": "/assets/p5_img5_2.png"
+      },
+      {
+        "name": "AWM狙击步枪",
+        "description": "AWM是一款由英国生产的狙击步枪，采用.338 Lapua Magnum弹药，具有极高的精度和射程，是军警中的顶级狙击武器。",
+        "image_url": "https://game.gtimg.cn/images/dfm/cp/a20240906main/p5_img6.jpg",
+        "thumbnail_image_url": "https://game.gtimg.cn/images/dfm/cp/a20240906main/p5_img6_2.png",
+        "image": "/assets/p5_img6.jpg",
+        "thumbnail": "/assets/p5_img6_2.png"
+      }
+    ],
+    "assets": [
+      {
+        "url": "https://game.gtimg.cn/images/dfm/cp/a20240906main/p4_m17.jpg",
+        "path": "/tmp/df-official-assets/p4_m17.jpg",
+        "bytes": 25003,
+        "pixelWidth": 449,
+        "pixelHeight": 257
+      },
+      {
+        "url": "https://game.gtimg.cn/images/dfm/cp/a20240906main/p4_icon2.png",
+        "path": "/tmp/df-official-assets/p4_icon2.png",
+        "bytes": 1895,
+        "pixelWidth": 163,
+        "pixelHeight": 170
+      },
+      {
+        "url": "https://game.gtimg.cn/images/dfm/cp/a20240906main/p4_icon17_2.png",
+        "path": "/tmp/df-official-assets/p4_icon17_2.png",
+        "bytes": 5335,
+        "pixelWidth": 159,
+        "pixelHeight": 157
+      },
+      {
+        "url": "https://game.gtimg.cn/images/dfm/cp/a20240906main/p4_icon17_3.png",
+        "path": "/tmp/df-official-assets/p4_icon17_3.png",
+        "bytes": 3387,
+        "pixelWidth": 138,
+        "pixelHeight": 152
+      },
+      {
+        "url": "https://game.gtimg.cn/images/dfm/cp/a20240906main/p4_icon17_4.png",
+        "path": "/tmp/df-official-assets/p4_icon17_4.png",
+        "bytes": 3668,
+        "pixelWidth": 156,
+        "pixelHeight": 149
+      },
+      {
+        "url": "https://game.gtimg.cn/images/dfm/cp/a20240906main/p4_icon17_1.png",
+        "path": "/tmp/df-official-assets/p4_icon17_1.png",
+        "bytes": 3346,
+        "pixelWidth": 164,
+        "pixelHeight": 164
+      },
+      {
+        "url": "https://game.gtimg.cn/images/dfm/cp/a20240906main/p4_img17.jpg",
+        "path": "/tmp/df-official-assets/p4_img17.jpg",
+        "bytes": 454656,
+        "pixelWidth": 3840,
+        "pixelHeight": 2171
+      },
+      {
+        "url": "https://game.gtimg.cn/images/dfm/cp/a20240906main/p4_m16.jpg",
+        "path": "/tmp/df-official-assets/p4_m16.jpg",
+        "bytes": 35204,
+        "pixelWidth": 452,
+        "pixelHeight": 259
+      },
+      {
+        "url": "https://game.gtimg.cn/images/dfm/cp/a20240906main/p4_icon4.png",
+        "path": "/tmp/df-official-assets/p4_icon4.png",
+        "bytes": 3287,
+        "pixelWidth": 163,
+        "pixelHeight": 170
+      },
+      {
+        "url": "https://game.gtimg.cn/images/dfm/cp/a20240906main/p4_icon16_2.png",
+        "path": "/tmp/df-official-assets/p4_icon16_2.png",
+        "bytes": 13314,
+        "pixelWidth": 161,
+        "pixelHeight": 161
+      },
+      {
+        "url": "https://game.gtimg.cn/images/dfm/cp/a20240906main/p4_icon16_3.png",
+        "path": "/tmp/df-official-assets/p4_icon16_3.png",
+        "bytes": 12738,
+        "pixelWidth": 176,
+        "pixelHeight": 176
+      },
+      {
+        "url": "https://game.gtimg.cn/images/dfm/cp/a20240906main/p4_icon16_4.png",
+        "path": "/tmp/df-official-assets/p4_icon16_4.png",
+        "bytes": 10247,
+        "pixelWidth": 176,
+        "pixelHeight": 176
+      },
+      {
+        "url": "https://game.gtimg.cn/images/dfm/cp/a20240906main/p4_icon16_1.png",
+        "path": "/tmp/df-official-assets/p4_icon16_1.png",
+        "bytes": 12392,
+        "pixelWidth": 169,
+        "pixelHeight": 169
+      },
+      {
+        "url": "https://game.gtimg.cn/images/dfm/cp/a20240906main/p4_img16.jpg",
+        "path": "/tmp/df-official-assets/p4_img16.jpg",
+        "bytes": 628113,
+        "pixelWidth": 3840,
+        "pixelHeight": 2203
+      },
+      {
+        "url": "https://game.gtimg.cn/images/dfm/cp/a20240906main/p4_m15.jpg",
+        "path": "/tmp/df-official-assets/p4_m15.jpg",
+        "bytes": 37584,
+        "pixelWidth": 452,
+        "pixelHeight": 259
+      },
+      {
+        "url": "https://game.gtimg.cn/images/dfm/cp/a20240906main/p4_icon1.png",
+        "path": "/tmp/df-official-assets/p4_icon1.png",
+        "bytes": 2481,
+        "pixelWidth": 89,
+        "pixelHeight": 90
+      },
+      {
+        "url": "https://game.gtimg.cn/images/dfm/cp/a20240906main/p4_icon15_3.png",
+        "path": "/tmp/df-official-assets/p4_icon15_3.png",
+        "bytes": 10438,
+        "pixelWidth": 151,
+        "pixelHeight": 151
+      },
+      {
+        "url": "https://game.gtimg.cn/images/dfm/cp/a20240906main/p4_icon15_1.png",
+        "path": "/tmp/df-official-assets/p4_icon15_1.png",
+        "bytes": 13731,
+        "pixelWidth": 167,
+        "pixelHeight": 167
+      },
+      {
+        "url": "https://game.gtimg.cn/images/dfm/cp/a20240906main/p4_icon15_2.png",
+        "path": "/tmp/df-official-assets/p4_icon15_2.png",
+        "bytes": 11273,
+        "pixelWidth": 157,
+        "pixelHeight": 154
+      },
+      {
+        "url": "https://game.gtimg.cn/images/dfm/cp/a20240906main/p4_icon15_4.png",
+        "path": "/tmp/df-official-assets/p4_icon15_4.png",
+        "bytes": 11414,
+        "pixelWidth": 155,
+        "pixelHeight": 155
+      },
+      {
+        "url": "https://game.gtimg.cn/images/dfm/cp/a20240906main/p4_img15.jpg",
+        "path": "/tmp/df-official-assets/p4_img15.jpg",
+        "bytes": 529001,
+        "pixelWidth": 3840,
+        "pixelHeight": 2214
+      },
+      {
+        "url": "https://game.gtimg.cn/images/dfm/cp/a20240906main/p4_m14.png",
+        "path": "/tmp/df-official-assets/p4_m14.png",
+        "bytes": 43236,
+        "pixelWidth": 454,
+        "pixelHeight": 262
+      },
+      {
+        "url": "https://game.gtimg.cn/images/dfm/cp/a20240906main/p4_icon14_1.png",
+        "path": "/tmp/df-official-assets/p4_icon14_1.png",
+        "bytes": 4930,
+        "pixelWidth": 133,
+        "pixelHeight": 130
+      },
+      {
+        "url": "https://game.gtimg.cn/images/dfm/cp/a20240906main/p4_icon14_2.png",
+        "path": "/tmp/df-official-assets/p4_icon14_2.png",
+        "bytes": 3387,
+        "pixelWidth": 116,
+        "pixelHeight": 120
+      },
+      {
+        "url": "https://game.gtimg.cn/images/dfm/cp/a20240906main/p4_icon14_3.png",
+        "path": "/tmp/df-official-assets/p4_icon14_3.png",
+        "bytes": 4514,
+        "pixelWidth": 130,
+        "pixelHeight": 133
+      },
+      {
+        "url": "https://game.gtimg.cn/images/dfm/cp/a20240906main/p4_icon14_4.png",
+        "path": "/tmp/df-official-assets/p4_icon14_4.png",
+        "bytes": 2515,
+        "pixelWidth": 131,
+        "pixelHeight": 119
+      },
+      {
+        "url": "https://game.gtimg.cn/images/dfm/cp/a20240906main/p4_m13.png",
+        "path": "/tmp/df-official-assets/p4_m13.png",
+        "bytes": 52062,
+        "pixelWidth": 457,
+        "pixelHeight": 262
+      },
+      {
+        "url": "https://game.gtimg.cn/images/dfm/cp/a20240906main/p4_icon13_4.png",
+        "path": "/tmp/df-official-assets/p4_icon13_4.png",
+        "bytes": 11950,
+        "pixelWidth": 159,
+        "pixelHeight": 159
+      },
+      {
+        "url": "https://game.gtimg.cn/images/dfm/cp/a20240906main/p4_icon13_2.png",
+        "path": "/tmp/df-official-assets/p4_icon13_2.png",
+        "bytes": 11187,
+        "pixelWidth": 168,
+        "pixelHeight": 167
+      },
+      {
+        "url": "https://game.gtimg.cn/images/dfm/cp/a20240906main/p4_icon13_1.png",
+        "path": "/tmp/df-official-assets/p4_icon13_1.png",
+        "bytes": 14171,
+        "pixelWidth": 185,
+        "pixelHeight": 182
+      },
+      {
+        "url": "https://game.gtimg.cn/images/dfm/cp/a20240906main/p4_icon13_3.png",
+        "path": "/tmp/df-official-assets/p4_icon13_3.png",
+        "bytes": 9518,
+        "pixelWidth": 168,
+        "pixelHeight": 164
+      },
+      {
+        "url": "https://game.gtimg.cn/images/dfm/cp/a20240906main/p4_m12.png",
+        "path": "/tmp/df-official-assets/p4_m12.png",
+        "bytes": 58202,
+        "pixelWidth": 454,
+        "pixelHeight": 262
+      },
+      {
+        "url": "https://game.gtimg.cn/images/dfm/cp/a20240906main/p4_icon12_2.png",
+        "path": "/tmp/df-official-assets/p4_icon12_2.png",
+        "bytes": 6017,
+        "pixelWidth": 103,
+        "pixelHeight": 102
+      },
+      {
+        "url": "https://game.gtimg.cn/images/dfm/cp/a20240906main/p4_icon12_3.png",
+        "path": "/tmp/df-official-assets/p4_icon12_3.png",
+        "bytes": 6869,
+        "pixelWidth": 105,
+        "pixelHeight": 105
+      },
+      {
+        "url": "https://game.gtimg.cn/images/dfm/cp/a20240906main/p4_icon12_4.png",
+        "path": "/tmp/df-official-assets/p4_icon12_4.png",
+        "bytes": 6230,
+        "pixelWidth": 101,
+        "pixelHeight": 102
+      },
+      {
+        "url": "https://game.gtimg.cn/images/dfm/cp/a20240906main/p4_icon12_1.png",
+        "path": "/tmp/df-official-assets/p4_icon12_1.png",
+        "bytes": 4656,
+        "pixelWidth": 98,
+        "pixelHeight": 95
+      },
+      {
+        "url": "https://game.gtimg.cn/images/dfm/cp/a20240906main/p4_m11.png",
+        "path": "/tmp/df-official-assets/p4_m11.png",
+        "bytes": 47930,
+        "pixelWidth": 454,
+        "pixelHeight": 262
+      },
+      {
+        "url": "https://game.gtimg.cn/images/dfm/cp/a20240906main/p4_icon3.png",
+        "path": "/tmp/df-official-assets/p4_icon3.png",
+        "bytes": 3954,
+        "pixelWidth": 163,
+        "pixelHeight": 170
+      },
+      {
+        "url": "https://game.gtimg.cn/images/dfm/cp/a20240906main/p4_icon11_4.png",
+        "path": "/tmp/df-official-assets/p4_icon11_4.png",
+        "bytes": 6229,
+        "pixelWidth": 107,
+        "pixelHeight": 115
+      },
+      {
+        "url": "https://game.gtimg.cn/images/dfm/cp/a20240906main/p4_icon11_2.png",
+        "path": "/tmp/df-official-assets/p4_icon11_2.png",
+        "bytes": 5632,
+        "pixelWidth": 107,
+        "pixelHeight": 105
+      },
+      {
+        "url": "https://game.gtimg.cn/images/dfm/cp/a20240906main/p4_icon11_3.png",
+        "path": "/tmp/df-official-assets/p4_icon11_3.png",
+        "bytes": 5596,
+        "pixelWidth": 106,
+        "pixelHeight": 105
+      },
+      {
+        "url": "https://game.gtimg.cn/images/dfm/cp/a20240906main/p4_icon11_1.png",
+        "path": "/tmp/df-official-assets/p4_icon11_1.png",
+        "bytes": 6617,
+        "pixelWidth": 114,
+        "pixelHeight": 115
+      },
+      {
+        "url": "https://game.gtimg.cn/images/dfm/cp/a20240906main/p4_m10.png",
+        "path": "/tmp/df-official-assets/p4_m10.png",
+        "bytes": 53078,
+        "pixelWidth": 454,
+        "pixelHeight": 262
+      },
+      {
+        "url": "https://game.gtimg.cn/images/dfm/cp/a20240906main/p4_icon10_4.png",
+        "path": "/tmp/df-official-assets/p4_icon10_4.png",
+        "bytes": 3722,
+        "pixelWidth": 114,
+        "pixelHeight": 114
+      },
+      {
+        "url": "https://game.gtimg.cn/images/dfm/cp/a20240906main/p4_icon10_2.png",
+        "path": "/tmp/df-official-assets/p4_icon10_2.png",
+        "bytes": 6144,
+        "pixelWidth": 116,
+        "pixelHeight": 111
+      },
+      {
+        "url": "https://game.gtimg.cn/images/dfm/cp/a20240906main/p4_icon10_3.png",
+        "path": "/tmp/df-official-assets/p4_icon10_3.png",
+        "bytes": 3187,
+        "pixelWidth": 110,
+        "pixelHeight": 110
+      },
+      {
+        "url": "https://game.gtimg.cn/images/dfm/cp/a20240906main/p4_icon10_1.png",
+        "path": "/tmp/df-official-assets/p4_icon10_1.png",
+        "bytes": 4299,
+        "pixelWidth": 99,
+        "pixelHeight": 94
+      },
+      {
+        "url": "https://game.gtimg.cn/images/dfm/cp/a20240906main/p4_m9.png",
+        "path": "/tmp/df-official-assets/p4_m9.png",
+        "bytes": 55438,
+        "pixelWidth": 454,
+        "pixelHeight": 262
+      },
+      {
+        "url": "https://game.gtimg.cn/images/dfm/cp/a20240906main/p4_icon9_2.png",
+        "path": "/tmp/df-official-assets/p4_icon9_2.png",
+        "bytes": 29282,
+        "pixelWidth": 106,
+        "pixelHeight": 106
+      },
+      {
+        "url": "https://game.gtimg.cn/images/dfm/cp/a20240906main/p4_icon9_3.png",
+        "path": "/tmp/df-official-assets/p4_icon9_3.png",
+        "bytes": 26811,
+        "pixelWidth": 109,
+        "pixelHeight": 111
+      },
+      {
+        "url": "https://game.gtimg.cn/images/dfm/cp/a20240906main/p4_icon9_4.png",
+        "path": "/tmp/df-official-assets/p4_icon9_4.png",
+        "bytes": 27323,
+        "pixelWidth": 98,
+        "pixelHeight": 98
+      },
+      {
+        "url": "https://game.gtimg.cn/images/dfm/cp/a20240906main/p4_icon9_1.png",
+        "path": "/tmp/df-official-assets/p4_icon9_1.png",
+        "bytes": 24583,
+        "pixelWidth": 98,
+        "pixelHeight": 102
+      },
+      {
+        "url": "https://game.gtimg.cn/images/dfm/cp/a20240906main/p4_m8.png",
+        "path": "/tmp/df-official-assets/p4_m8.png",
+        "bytes": 52512,
+        "pixelWidth": 454,
+        "pixelHeight": 262
+      },
+      {
+        "url": "https://game.gtimg.cn/images/dfm/cp/a20240906main/p4_icon8_4.png",
+        "path": "/tmp/df-official-assets/p4_icon8_4.png",
+        "bytes": 6020,
+        "pixelWidth": 83,
+        "pixelHeight": 84
+      },
+      {
+        "url": "https://game.gtimg.cn/images/dfm/cp/a20240906main/p4_icon8_3.png",
+        "path": "/tmp/df-official-assets/p4_icon8_3.png",
+        "bytes": 4756,
+        "pixelWidth": 83,
+        "pixelHeight": 79
+      },
+      {
+        "url": "https://game.gtimg.cn/images/dfm/cp/a20240906main/p4_icon8_2.png",
+        "path": "/tmp/df-official-assets/p4_icon8_2.png",
+        "bytes": 5140,
+        "pixelWidth": 84,
+        "pixelHeight": 81
+      },
+      {
+        "url": "https://game.gtimg.cn/images/dfm/cp/a20240906main/p4_icon8_1.png",
+        "path": "/tmp/df-official-assets/p4_icon8_1.png",
+        "bytes": 4765,
+        "pixelWidth": 81,
+        "pixelHeight": 81
+      },
+      {
+        "url": "https://game.gtimg.cn/images/dfm/cp/a20240906main/p4_m1.png",
+        "path": "/tmp/df-official-assets/p4_m1.png",
+        "bytes": 46914,
+        "pixelWidth": 454,
+        "pixelHeight": 262
+      },
+      {
+        "url": "https://game.gtimg.cn/images/dfm/cp/a20240906main/p4_icon1_1.png",
+        "path": "/tmp/df-official-assets/p4_icon1_1.png",
+        "bytes": 10131,
+        "pixelWidth": 100,
+        "pixelHeight": 100
+      },
+      {
+        "url": "https://game.gtimg.cn/images/dfm/cp/a20240906main/p4_icon1_2.png",
+        "path": "/tmp/df-official-assets/p4_icon1_2.png",
+        "bytes": 10979,
+        "pixelWidth": 100,
+        "pixelHeight": 100
+      },
+      {
+        "url": "https://game.gtimg.cn/images/dfm/cp/a20240906main/p4_icon1_3.png",
+        "path": "/tmp/df-official-assets/p4_icon1_3.png",
+        "bytes": 8964,
+        "pixelWidth": 100,
+        "pixelHeight": 100
+      },
+      {
+        "url": "https://game.gtimg.cn/images/dfm/cp/a20240906main/p4_icon1_4.png",
+        "path": "/tmp/df-official-assets/p4_icon1_4.png",
+        "bytes": 6114,
+        "pixelWidth": 100,
+        "pixelHeight": 100
+      },
+      {
+        "url": "https://game.gtimg.cn/images/dfm/cp/a20240906main/p4_m2.png",
+        "path": "/tmp/df-official-assets/p4_m2.png",
+        "bytes": 55148,
+        "pixelWidth": 454,
+        "pixelHeight": 262
+      },
+      {
+        "url": "https://game.gtimg.cn/images/dfm/cp/a20240906main/p4_icon2_1.png",
+        "path": "/tmp/df-official-assets/p4_icon2_1.png",
+        "bytes": 11659,
+        "pixelWidth": 100,
+        "pixelHeight": 100
+      },
+      {
+        "url": "https://game.gtimg.cn/images/dfm/cp/a20240906main/p4_icon2_2.png",
+        "path": "/tmp/df-official-assets/p4_icon2_2.png",
+        "bytes": 8173,
+        "pixelWidth": 100,
+        "pixelHeight": 100
+      },
+      {
+        "url": "https://game.gtimg.cn/images/dfm/cp/a20240906main/p4_icon2_3.png",
+        "path": "/tmp/df-official-assets/p4_icon2_3.png",
+        "bytes": 10209,
+        "pixelWidth": 100,
+        "pixelHeight": 100
+      },
+      {
+        "url": "https://game.gtimg.cn/images/dfm/cp/a20240906main/p4_icon2_4.png",
+        "path": "/tmp/df-official-assets/p4_icon2_4.png",
+        "bytes": 8321,
+        "pixelWidth": 100,
+        "pixelHeight": 100
+      },
+      {
+        "url": "https://game.gtimg.cn/images/dfm/cp/a20240906main/p4_m3.png",
+        "path": "/tmp/df-official-assets/p4_m3.png",
+        "bytes": 45423,
+        "pixelWidth": 454,
+        "pixelHeight": 262
+      },
+      {
+        "url": "https://game.gtimg.cn/images/dfm/cp/a20240906main/p4_icon3_1.png",
+        "path": "/tmp/df-official-assets/p4_icon3_1.png",
+        "bytes": 8990,
+        "pixelWidth": 100,
+        "pixelHeight": 100
+      },
+      {
+        "url": "https://game.gtimg.cn/images/dfm/cp/a20240906main/p4_icon3_2.png",
+        "path": "/tmp/df-official-assets/p4_icon3_2.png",
+        "bytes": 7836,
+        "pixelWidth": 100,
+        "pixelHeight": 100
+      },
+      {
+        "url": "https://game.gtimg.cn/images/dfm/cp/a20240906main/p4_icon3_3.png",
+        "path": "/tmp/df-official-assets/p4_icon3_3.png",
+        "bytes": 9888,
+        "pixelWidth": 100,
+        "pixelHeight": 100
+      },
+      {
+        "url": "https://game.gtimg.cn/images/dfm/cp/a20240906main/p4_icon3_4.png",
+        "path": "/tmp/df-official-assets/p4_icon3_4.png",
+        "bytes": 8605,
+        "pixelWidth": 100,
+        "pixelHeight": 100
+      },
+      {
+        "url": "https://game.gtimg.cn/images/dfm/cp/a20240906main/p4_m4.png",
+        "path": "/tmp/df-official-assets/p4_m4.png",
+        "bytes": 45908,
+        "pixelWidth": 454,
+        "pixelHeight": 262
+      },
+      {
+        "url": "https://game.gtimg.cn/images/dfm/cp/a20240906main/p4_icon4_1.png",
+        "path": "/tmp/df-official-assets/p4_icon4_1.png",
+        "bytes": 11835,
+        "pixelWidth": 100,
+        "pixelHeight": 100
+      },
+      {
+        "url": "https://game.gtimg.cn/images/dfm/cp/a20240906main/p4_icon4_2.png",
+        "path": "/tmp/df-official-assets/p4_icon4_2.png",
+        "bytes": 7612,
+        "pixelWidth": 100,
+        "pixelHeight": 100
+      },
+      {
+        "url": "https://game.gtimg.cn/images/dfm/cp/a20240906main/p4_icon4_3.png",
+        "path": "/tmp/df-official-assets/p4_icon4_3.png",
+        "bytes": 8696,
+        "pixelWidth": 100,
+        "pixelHeight": 100
+      },
+      {
+        "url": "https://game.gtimg.cn/images/dfm/cp/a20240906main/p4_icon4_4.png",
+        "path": "/tmp/df-official-assets/p4_icon4_4.png",
+        "bytes": 8097,
+        "pixelWidth": 100,
+        "pixelHeight": 100
+      },
+      {
+        "url": "https://game.gtimg.cn/images/dfm/cp/a20240906main/p4_m5.png",
+        "path": "/tmp/df-official-assets/p4_m5.png",
+        "bytes": 53474,
+        "pixelWidth": 454,
+        "pixelHeight": 262
+      },
+      {
+        "url": "https://game.gtimg.cn/images/dfm/cp/a20240906main/p4_icon5_1.png",
+        "path": "/tmp/df-official-assets/p4_icon5_1.png",
+        "bytes": 9070,
+        "pixelWidth": 100,
+        "pixelHeight": 100
+      },
+      {
+        "url": "https://game.gtimg.cn/images/dfm/cp/a20240906main/p4_icon5_2.png",
+        "path": "/tmp/df-official-assets/p4_icon5_2.png",
+        "bytes": 9320,
+        "pixelWidth": 100,
+        "pixelHeight": 100
+      },
+      {
+        "url": "https://game.gtimg.cn/images/dfm/cp/a20240906main/p4_icon5_3.png",
+        "path": "/tmp/df-official-assets/p4_icon5_3.png",
+        "bytes": 8622,
+        "pixelWidth": 100,
+        "pixelHeight": 100
+      },
+      {
+        "url": "https://game.gtimg.cn/images/dfm/cp/a20240906main/p4_icon5_4.png",
+        "path": "/tmp/df-official-assets/p4_icon5_4.png",
+        "bytes": 7579,
+        "pixelWidth": 100,
+        "pixelHeight": 100
+      },
+      {
+        "url": "https://game.gtimg.cn/images/dfm/cp/a20240906main/p4_m6.png",
+        "path": "/tmp/df-official-assets/p4_m6.png",
+        "bytes": 51912,
+        "pixelWidth": 454,
+        "pixelHeight": 262
+      },
+      {
+        "url": "https://game.gtimg.cn/images/dfm/cp/a20240906main/p4_icon6_1.png",
+        "path": "/tmp/df-official-assets/p4_icon6_1.png",
+        "bytes": 12714,
+        "pixelWidth": 100,
+        "pixelHeight": 100
+      },
+      {
+        "url": "https://game.gtimg.cn/images/dfm/cp/a20240906main/p4_icon6_2.png",
+        "path": "/tmp/df-official-assets/p4_icon6_2.png",
+        "bytes": 7876,
+        "pixelWidth": 100,
+        "pixelHeight": 100
+      },
+      {
+        "url": "https://game.gtimg.cn/images/dfm/cp/a20240906main/p4_icon6_3.png",
+        "path": "/tmp/df-official-assets/p4_icon6_3.png",
+        "bytes": 10268,
+        "pixelWidth": 100,
+        "pixelHeight": 100
+      },
+      {
+        "url": "https://game.gtimg.cn/images/dfm/cp/a20240906main/p4_icon6_4.png",
+        "path": "/tmp/df-official-assets/p4_icon6_4.png",
+        "bytes": 7953,
+        "pixelWidth": 100,
+        "pixelHeight": 100
+      },
+      {
+        "url": "https://game.gtimg.cn/images/dfm/cp/a20240906main/p4_m7.png",
+        "path": "/tmp/df-official-assets/p4_m7.png",
+        "bytes": 49478,
+        "pixelWidth": 456,
+        "pixelHeight": 262
+      },
+      {
+        "url": "https://game.gtimg.cn/images/dfm/cp/a20240906main/p4_icon7_1.png",
+        "path": "/tmp/df-official-assets/p4_icon7_1.png",
+        "bytes": 10772,
+        "pixelWidth": 100,
+        "pixelHeight": 100
+      },
+      {
+        "url": "https://game.gtimg.cn/images/dfm/cp/a20240906main/p4_icon7_2.png",
+        "path": "/tmp/df-official-assets/p4_icon7_2.png",
+        "bytes": 12912,
+        "pixelWidth": 100,
+        "pixelHeight": 100
+      },
+      {
+        "url": "https://game.gtimg.cn/images/dfm/cp/a20240906main/p4_icon7_3.png",
+        "path": "/tmp/df-official-assets/p4_icon7_3.png",
+        "bytes": 9040,
+        "pixelWidth": 100,
+        "pixelHeight": 100
+      },
+      {
+        "url": "https://game.gtimg.cn/images/dfm/cp/a20240906main/p4_icon7_4.png",
+        "path": "/tmp/df-official-assets/p4_icon7_4.png",
+        "bytes": 10333,
+        "pixelWidth": 100,
+        "pixelHeight": 100
+      },
+      {
+        "url": "https://game.gtimg.cn/images/dfm/cp/a20240906main/p5_img1.jpg",
+        "path": "/tmp/df-official-assets/p5_img1.jpg",
+        "bytes": 425701,
+        "pixelWidth": 3840,
+        "pixelHeight": 2110
+      },
+      {
+        "url": "https://game.gtimg.cn/images/dfm/cp/a20240906main/p5_img1_2.png",
+        "path": "/tmp/df-official-assets/p5_img1_2.png",
+        "bytes": 35051,
+        "pixelWidth": 412,
+        "pixelHeight": 196
+      },
+      {
+        "url": "https://game.gtimg.cn/images/dfm/cp/a20240906main/p5_img2.jpg",
+        "path": "/tmp/df-official-assets/p5_img2.jpg",
+        "bytes": 414951,
+        "pixelWidth": 3840,
+        "pixelHeight": 2110
+      },
+      {
+        "url": "https://game.gtimg.cn/images/dfm/cp/a20240906main/p5_img2_2.png",
+        "path": "/tmp/df-official-assets/p5_img2_2.png",
+        "bytes": 32257,
+        "pixelWidth": 412,
+        "pixelHeight": 196
+      },
+      {
+        "url": "https://game.gtimg.cn/images/dfm/cp/a20240906main/p5_img3.jpg",
+        "path": "/tmp/df-official-assets/p5_img3.jpg",
+        "bytes": 392557,
+        "pixelWidth": 3840,
+        "pixelHeight": 2110
+      },
+      {
+        "url": "https://game.gtimg.cn/images/dfm/cp/a20240906main/p5_img3_2.png",
+        "path": "/tmp/df-official-assets/p5_img3_2.png",
+        "bytes": 26917,
+        "pixelWidth": 412,
+        "pixelHeight": 196
+      },
+      {
+        "url": "https://game.gtimg.cn/images/dfm/cp/a20240906main/p5_img4.jpg",
+        "path": "/tmp/df-official-assets/p5_img4.jpg",
+        "bytes": 289111,
+        "pixelWidth": 3840,
+        "pixelHeight": 2110
+      },
+      {
+        "url": "https://game.gtimg.cn/images/dfm/cp/a20240906main/p5_img4_2.png",
+        "path": "/tmp/df-official-assets/p5_img4_2.png",
+        "bytes": 40023,
+        "pixelWidth": 412,
+        "pixelHeight": 196
+      },
+      {
+        "url": "https://game.gtimg.cn/images/dfm/cp/a20240906main/p5_img5.jpg",
+        "path": "/tmp/df-official-assets/p5_img5.jpg",
+        "bytes": 412552,
+        "pixelWidth": 3840,
+        "pixelHeight": 2110
+      },
+      {
+        "url": "https://game.gtimg.cn/images/dfm/cp/a20240906main/p5_img5_2.png",
+        "path": "/tmp/df-official-assets/p5_img5_2.png",
+        "bytes": 26289,
+        "pixelWidth": 412,
+        "pixelHeight": 196
+      },
+      {
+        "url": "https://game.gtimg.cn/images/dfm/cp/a20240906main/p5_img6.jpg",
+        "path": "/tmp/df-official-assets/p5_img6.jpg",
+        "bytes": 381664,
+        "pixelWidth": 3840,
+        "pixelHeight": 2110
+      },
+      {
+        "url": "https://game.gtimg.cn/images/dfm/cp/a20240906main/p5_img6_2.png",
+        "path": "/tmp/df-official-assets/p5_img6_2.png",
+        "bytes": 24063,
+        "pixelWidth": 412,
+        "pixelHeight": 196
+      }
+    ],
+    "notes": [
+      "Descriptions are copied from the official desktop page, with whitespace normalized. Descriptions include both modes where the official page supplies them. Operations-specific text is additionally extracted without rewriting.",
+      "The weapon thumbnail PNG assets contain their own dark rectangular background; they are not transparent cutouts.",
+      "The 14 existing operator body images are intentionally left for the sibling GitHub asset task. All 17 official desktop image URLs are recorded."
+    ],
+    "hero": {
+      "url": "https://game.gtimg.cn/images/dfm/cp/a20240906main/part1-0609.jpg",
+      "path": "/tmp/df-official-assets/hero-official.jpg",
+      "width": 3840,
+      "height": 2157,
+      "notes": "Official blue anniversary character ensemble. The bitmap itself contains anniversary slogan text; no download buttons or web UI."
+    },
+    "logo": {
+      "url": "https://game.gtimg.cn/images/dfm/cp/a20240906main/logo.png",
+      "path": "/tmp/df-official-assets/logo.png"
+    },
+    "hero_alternative": {
+      "url": "https://game.gtimg.cn/images/dfm/cp/a20240906main/part1.jpg",
+      "path": "/tmp/df-official-assets/hero-alternative.jpg",
+      "width": 3840,
+      "height": 2158,
+      "notes": "CSS-commented official S11 Stars season key art: Rowan and dog in blue-white action scene. Embedded season slogan and Sept 4 date, no download controls/web UI."
+    }
+  },
+  "github": {
+    "repository": "https://github.com/Entropy-Increase-Team/delta-force-plugin",
+    "commit": "1a00e85a8a32078b2fd1124a4776d131fb62eefb",
+    "source_directory": "https://github.com/Entropy-Increase-Team/delta-force-plugin/tree/1a00e85a8a32078b2fd1124a4776d131fb62eefb/resources/imgs/operator",
+    "local_directory": "/tmp/df-github-assets",
+    "download_concurrency": 4,
+    "license": {
+      "repository_license": "GNU Affero General Public License v3.0",
+      "source_url": "https://github.com/Entropy-Increase-Team/delta-force-plugin/blob/1a00e85a8a32078b2fd1124a4776d131fb62eefb/LICENSE",
+      "local_path": "/tmp/df-github-assets/LICENSE.source.txt",
+      "sha256": "20b067f86de375aae6db0f283ab2e65de24d537733b89bd58432c101259d84cf"
+    },
+    "operators_count": 14,
+    "assets_count": 28,
+    "total_bytes": 7526889,
+    "assets": [
+      {
+        "operator": "乌鲁鲁",
+        "kind": "banner",
+        "source_filename": "乌鲁鲁.jpg",
+        "local_filename": "乌鲁鲁.jpg",
+        "local_path": "/tmp/df-github-assets/乌鲁鲁.jpg",
+        "source_url": "https://github.com/Entropy-Increase-Team/delta-force-plugin/blob/1a00e85a8a32078b2fd1124a4776d131fb62eefb/resources/imgs/operator/%E4%B9%8C%E9%B2%81%E9%B2%81.jpg",
+        "download_url": "https://raw.githubusercontent.com/Entropy-Increase-Team/delta-force-plugin/1a00e85a8a32078b2fd1124a4776d131fb62eefb/resources/imgs/operator/%E4%B9%8C%E9%B2%81%E9%B2%81.jpg",
+        "actual_format": "JPEG",
+        "mime_type": "image/jpeg",
+        "width": 4096,
+        "height": 2160,
+        "bytes": 351744,
+        "sha256": "a8769775e2707d1669e85308eee6a738f14a525d43662e3a2c4a45facb45cf0e",
+        "git_blob_sha1": "c1419ca3f220ed6a06d80383e6c57f59e9d0bce1",
+        "source_content_type": "image/jpeg",
+        "git_blob_verified": true,
+        "lfs_pointer": false,
+        "header_verified": true,
+        "system_file_description": "JPEG image data, JFIF standard 1.01, aspect ratio, density 1x1, segment length 16, progressive, precision 8, 4096x2160, components 3",
+        "system_metadata_verified": true
+      },
+      {
+        "operator": "乌鲁鲁",
+        "kind": "card",
+        "source_filename": "乌鲁鲁.png",
+        "local_filename": "乌鲁鲁.webp",
+        "local_path": "/tmp/df-github-assets/乌鲁鲁.webp",
+        "source_url": "https://github.com/Entropy-Increase-Team/delta-force-plugin/blob/1a00e85a8a32078b2fd1124a4776d131fb62eefb/resources/imgs/operator/%E4%B9%8C%E9%B2%81%E9%B2%81.png",
+        "download_url": "https://raw.githubusercontent.com/Entropy-Increase-Team/delta-force-plugin/1a00e85a8a32078b2fd1124a4776d131fb62eefb/resources/imgs/operator/%E4%B9%8C%E9%B2%81%E9%B2%81.png",
+        "actual_format": "WEBP",
+        "mime_type": "image/webp",
+        "width": 454,
+        "height": 262,
+        "bytes": 26720,
+        "sha256": "022dc635bfba2c12d91f770acffd3ed25e46aa6d8630375dcd296bf9e3925ffd",
+        "git_blob_sha1": "63201634768859f86dfef4873e6d6cdc72be0e95",
+        "source_content_type": "image/png",
+        "git_blob_verified": true,
+        "lfs_pointer": false,
+        "header_verified": true,
+        "system_file_description": "RIFF (little-endian) data, Web/P image",
+        "system_metadata_verified": true
+      },
+      {
+        "operator": "威龙",
+        "kind": "banner",
+        "source_filename": "威龙.jpg",
+        "local_filename": "威龙.jpg",
+        "local_path": "/tmp/df-github-assets/威龙.jpg",
+        "source_url": "https://github.com/Entropy-Increase-Team/delta-force-plugin/blob/1a00e85a8a32078b2fd1124a4776d131fb62eefb/resources/imgs/operator/%E5%A8%81%E9%BE%99.jpg",
+        "download_url": "https://raw.githubusercontent.com/Entropy-Increase-Team/delta-force-plugin/1a00e85a8a32078b2fd1124a4776d131fb62eefb/resources/imgs/operator/%E5%A8%81%E9%BE%99.jpg",
+        "actual_format": "JPEG",
+        "mime_type": "image/jpeg",
+        "width": 4096,
+        "height": 2160,
+        "bytes": 397667,
+        "sha256": "f3a9b132a315a8467af13876c9084a5df40b8625f995386f5c6f698529f36eac",
+        "git_blob_sha1": "dad56a4ea6e25885a44b245e90fce7e440e2c665",
+        "source_content_type": "image/jpeg",
+        "git_blob_verified": true,
+        "lfs_pointer": false,
+        "header_verified": true,
+        "system_file_description": "JPEG image data, JFIF standard 1.01, aspect ratio, density 1x1, segment length 16, progressive, precision 8, 4096x2160, components 3",
+        "system_metadata_verified": true
+      },
+      {
+        "operator": "威龙",
+        "kind": "card",
+        "source_filename": "威龙.png",
+        "local_filename": "威龙.webp",
+        "local_path": "/tmp/df-github-assets/威龙.webp",
+        "source_url": "https://github.com/Entropy-Increase-Team/delta-force-plugin/blob/1a00e85a8a32078b2fd1124a4776d131fb62eefb/resources/imgs/operator/%E5%A8%81%E9%BE%99.png",
+        "download_url": "https://raw.githubusercontent.com/Entropy-Increase-Team/delta-force-plugin/1a00e85a8a32078b2fd1124a4776d131fb62eefb/resources/imgs/operator/%E5%A8%81%E9%BE%99.png",
+        "actual_format": "WEBP",
+        "mime_type": "image/webp",
+        "width": 454,
+        "height": 262,
+        "bytes": 33818,
+        "sha256": "49f8a37a434fbab30a7be1b543573650da35ceb8b0f192e343e1c7ede7d1ba48",
+        "git_blob_sha1": "5a5a93551b3a6e9763ae4207ec4321fbd46030ba",
+        "source_content_type": "image/png",
+        "git_blob_verified": true,
+        "lfs_pointer": false,
+        "header_verified": true,
+        "system_file_description": "RIFF (little-endian) data, Web/P image",
+        "system_metadata_verified": true
+      },
+      {
+        "operator": "无名",
+        "kind": "banner",
+        "source_filename": "无名.jpg",
+        "local_filename": "无名.jpg",
+        "local_path": "/tmp/df-github-assets/无名.jpg",
+        "source_url": "https://github.com/Entropy-Increase-Team/delta-force-plugin/blob/1a00e85a8a32078b2fd1124a4776d131fb62eefb/resources/imgs/operator/%E6%97%A0%E5%90%8D.jpg",
+        "download_url": "https://raw.githubusercontent.com/Entropy-Increase-Team/delta-force-plugin/1a00e85a8a32078b2fd1124a4776d131fb62eefb/resources/imgs/operator/%E6%97%A0%E5%90%8D.jpg",
+        "actual_format": "JPEG",
+        "mime_type": "image/jpeg",
+        "width": 3840,
+        "height": 2241,
+        "bytes": 430271,
+        "sha256": "9b86c18802fa750c237a08cc2010bc448fa00c67c39d76d04ec9080fc33d071b",
+        "git_blob_sha1": "5fc503da298bdef43e4467a038dd1830d9687e76",
+        "source_content_type": "image/jpeg",
+        "git_blob_verified": true,
+        "lfs_pointer": false,
+        "header_verified": true,
+        "system_file_description": "JPEG image data, JFIF standard 1.01, aspect ratio, density 1x1, segment length 16, progressive, precision 8, 3840x2241, components 3",
+        "system_metadata_verified": true
+      },
+      {
+        "operator": "无名",
+        "kind": "card",
+        "source_filename": "无名.png",
+        "local_filename": "无名.webp",
+        "local_path": "/tmp/df-github-assets/无名.webp",
+        "source_url": "https://github.com/Entropy-Increase-Team/delta-force-plugin/blob/1a00e85a8a32078b2fd1124a4776d131fb62eefb/resources/imgs/operator/%E6%97%A0%E5%90%8D.png",
+        "download_url": "https://raw.githubusercontent.com/Entropy-Increase-Team/delta-force-plugin/1a00e85a8a32078b2fd1124a4776d131fb62eefb/resources/imgs/operator/%E6%97%A0%E5%90%8D.png",
+        "actual_format": "WEBP",
+        "mime_type": "image/webp",
+        "width": 454,
+        "height": 262,
+        "bytes": 27758,
+        "sha256": "6797b966046b43da0698f17958899f707959e2dbc9162c451f97bca1e0f9daa9",
+        "git_blob_sha1": "165afb53f0278be529a2ab7b6bfb71ed0fa9ccd0",
+        "source_content_type": "image/png",
+        "git_blob_verified": true,
+        "lfs_pointer": false,
+        "header_verified": true,
+        "system_file_description": "RIFF (little-endian) data, Web/P image",
+        "system_metadata_verified": true
+      },
+      {
+        "operator": "比特",
+        "kind": "banner",
+        "source_filename": "比特.jpg",
+        "local_filename": "比特.jpg",
+        "local_path": "/tmp/df-github-assets/比特.jpg",
+        "source_url": "https://github.com/Entropy-Increase-Team/delta-force-plugin/blob/1a00e85a8a32078b2fd1124a4776d131fb62eefb/resources/imgs/operator/%E6%AF%94%E7%89%B9.jpg",
+        "download_url": "https://raw.githubusercontent.com/Entropy-Increase-Team/delta-force-plugin/1a00e85a8a32078b2fd1124a4776d131fb62eefb/resources/imgs/operator/%E6%AF%94%E7%89%B9.jpg",
+        "actual_format": "JPEG",
+        "mime_type": "image/jpeg",
+        "width": 3840,
+        "height": 2208,
+        "bytes": 687784,
+        "sha256": "9817c38eae34225f6021d6568aeb496bd6f8a09217f0f9c2ec37bb2a29920239",
+        "git_blob_sha1": "fa2a90ff2231ffe365f38417904ec5aae3073fc2",
+        "source_content_type": "image/jpeg",
+        "git_blob_verified": true,
+        "lfs_pointer": false,
+        "header_verified": true,
+        "system_file_description": "JPEG image data, JFIF standard 1.01, aspect ratio, density 1x1, segment length 16, progressive, precision 8, 3840x2208, components 3",
+        "system_metadata_verified": true
+      },
+      {
+        "operator": "比特",
+        "kind": "card",
+        "source_filename": "比特.png",
+        "local_filename": "比特.webp",
+        "local_path": "/tmp/df-github-assets/比特.webp",
+        "source_url": "https://github.com/Entropy-Increase-Team/delta-force-plugin/blob/1a00e85a8a32078b2fd1124a4776d131fb62eefb/resources/imgs/operator/%E6%AF%94%E7%89%B9.png",
+        "download_url": "https://raw.githubusercontent.com/Entropy-Increase-Team/delta-force-plugin/1a00e85a8a32078b2fd1124a4776d131fb62eefb/resources/imgs/operator/%E6%AF%94%E7%89%B9.png",
+        "actual_format": "WEBP",
+        "mime_type": "image/webp",
+        "width": 454,
+        "height": 262,
+        "bytes": 32040,
+        "sha256": "7caa756db320e2d91379801776e311af64a4936affc934c4ad369071b9f5d99c",
+        "git_blob_sha1": "477c75f282679e80ebd2d753088146c7661680b3",
+        "source_content_type": "image/png",
+        "git_blob_verified": true,
+        "lfs_pointer": false,
+        "header_verified": true,
+        "system_file_description": "RIFF (little-endian) data, Web/P image",
+        "system_metadata_verified": true
+      },
+      {
+        "operator": "深蓝",
+        "kind": "banner",
+        "source_filename": "深蓝.jpg",
+        "local_filename": "深蓝.jpg",
+        "local_path": "/tmp/df-github-assets/深蓝.jpg",
+        "source_url": "https://github.com/Entropy-Increase-Team/delta-force-plugin/blob/1a00e85a8a32078b2fd1124a4776d131fb62eefb/resources/imgs/operator/%E6%B7%B1%E8%93%9D.jpg",
+        "download_url": "https://raw.githubusercontent.com/Entropy-Increase-Team/delta-force-plugin/1a00e85a8a32078b2fd1124a4776d131fb62eefb/resources/imgs/operator/%E6%B7%B1%E8%93%9D.jpg",
+        "actual_format": "JPEG",
+        "mime_type": "image/jpeg",
+        "width": 4258,
+        "height": 2245,
+        "bytes": 832221,
+        "sha256": "1b1ef05214eccccba1c49c70159f1f21039d064dffd128a4d3ac91ab88e3bffd",
+        "git_blob_sha1": "62673d7f9b48cf077a7401c89e4e684146b2f4f8",
+        "source_content_type": "image/jpeg",
+        "git_blob_verified": true,
+        "lfs_pointer": false,
+        "header_verified": true,
+        "system_file_description": "JPEG image data, Exif standard: [TIFF image data, little-endian, direntries=0], baseline, precision 8, 4258x2245, components 3",
+        "system_metadata_verified": true
+      },
+      {
+        "operator": "深蓝",
+        "kind": "card",
+        "source_filename": "深蓝.png",
+        "local_filename": "深蓝.webp",
+        "local_path": "/tmp/df-github-assets/深蓝.webp",
+        "source_url": "https://github.com/Entropy-Increase-Team/delta-force-plugin/blob/1a00e85a8a32078b2fd1124a4776d131fb62eefb/resources/imgs/operator/%E6%B7%B1%E8%93%9D.png",
+        "download_url": "https://raw.githubusercontent.com/Entropy-Increase-Team/delta-force-plugin/1a00e85a8a32078b2fd1124a4776d131fb62eefb/resources/imgs/operator/%E6%B7%B1%E8%93%9D.png",
+        "actual_format": "WEBP",
+        "mime_type": "image/webp",
+        "width": 454,
+        "height": 262,
+        "bytes": 33014,
+        "sha256": "48d5013c8b5d512648c9375fdb5d8d9ae96aed27ffc28f08dd8a97223f5e03ad",
+        "git_blob_sha1": "2f7211dc872d5a21256fa43ac6c9ce9bc1ef18d0",
+        "source_content_type": "image/png",
+        "git_blob_verified": true,
+        "lfs_pointer": false,
+        "header_verified": true,
+        "system_file_description": "RIFF (little-endian) data, Web/P image",
+        "system_metadata_verified": true
+      },
+      {
+        "operator": "牧羊人",
+        "kind": "banner",
+        "source_filename": "牧羊人.jpg",
+        "local_filename": "牧羊人.jpg",
+        "local_path": "/tmp/df-github-assets/牧羊人.jpg",
+        "source_url": "https://github.com/Entropy-Increase-Team/delta-force-plugin/blob/1a00e85a8a32078b2fd1124a4776d131fb62eefb/resources/imgs/operator/%E7%89%A7%E7%BE%8A%E4%BA%BA.jpg",
+        "download_url": "https://raw.githubusercontent.com/Entropy-Increase-Team/delta-force-plugin/1a00e85a8a32078b2fd1124a4776d131fb62eefb/resources/imgs/operator/%E7%89%A7%E7%BE%8A%E4%BA%BA.jpg",
+        "actual_format": "JPEG",
+        "mime_type": "image/jpeg",
+        "width": 4096,
+        "height": 2160,
+        "bytes": 411042,
+        "sha256": "fb6343c07825ddd01413b8e1b6850401fa5d65e510e61281bde4d62304e0f556",
+        "git_blob_sha1": "6980a3e5e987a8b70fb8940acdd2947279633f03",
+        "source_content_type": "image/jpeg",
+        "git_blob_verified": true,
+        "lfs_pointer": false,
+        "header_verified": true,
+        "system_file_description": "JPEG image data, JFIF standard 1.01, aspect ratio, density 1x1, segment length 16, progressive, precision 8, 4096x2160, components 3",
+        "system_metadata_verified": true
+      },
+      {
+        "operator": "牧羊人",
+        "kind": "card",
+        "source_filename": "牧羊人.png",
+        "local_filename": "牧羊人.webp",
+        "local_path": "/tmp/df-github-assets/牧羊人.webp",
+        "source_url": "https://github.com/Entropy-Increase-Team/delta-force-plugin/blob/1a00e85a8a32078b2fd1124a4776d131fb62eefb/resources/imgs/operator/%E7%89%A7%E7%BE%8A%E4%BA%BA.png",
+        "download_url": "https://raw.githubusercontent.com/Entropy-Increase-Team/delta-force-plugin/1a00e85a8a32078b2fd1124a4776d131fb62eefb/resources/imgs/operator/%E7%89%A7%E7%BE%8A%E4%BA%BA.png",
+        "actual_format": "WEBP",
+        "mime_type": "image/webp",
+        "width": 456,
+        "height": 262,
+        "bytes": 27108,
+        "sha256": "76ce3fb27c60baf906ee6068372a2922cf929c6be5189131682c4b28bcf98070",
+        "git_blob_sha1": "454876dbce0b5d3caf2fb49efbeb3b4bb0276c48",
+        "source_content_type": "image/png",
+        "git_blob_verified": true,
+        "lfs_pointer": false,
+        "header_verified": true,
+        "system_file_description": "RIFF (little-endian) data, Web/P image",
+        "system_metadata_verified": true
+      },
+      {
+        "operator": "疾风",
+        "kind": "banner",
+        "source_filename": "疾风.jpg",
+        "local_filename": "疾风.jpg",
+        "local_path": "/tmp/df-github-assets/疾风.jpg",
+        "source_url": "https://github.com/Entropy-Increase-Team/delta-force-plugin/blob/1a00e85a8a32078b2fd1124a4776d131fb62eefb/resources/imgs/operator/%E7%96%BE%E9%A3%8E.jpg",
+        "download_url": "https://raw.githubusercontent.com/Entropy-Increase-Team/delta-force-plugin/1a00e85a8a32078b2fd1124a4776d131fb62eefb/resources/imgs/operator/%E7%96%BE%E9%A3%8E.jpg",
+        "actual_format": "JPEG",
+        "mime_type": "image/jpeg",
+        "width": 3840,
+        "height": 2211,
+        "bytes": 311581,
+        "sha256": "e53c897b0844affaab489dbff1face4fe07955de3f7cc3b0e4718648f0211fec",
+        "git_blob_sha1": "03ddc965f7a91f9c96062a938bae2d22154f1d28",
+        "source_content_type": "image/jpeg",
+        "git_blob_verified": true,
+        "lfs_pointer": false,
+        "header_verified": true,
+        "system_file_description": "JPEG image data, JFIF standard 1.01, aspect ratio, density 1x1, segment length 16, progressive, precision 8, 3840x2211, components 3",
+        "system_metadata_verified": true
+      },
+      {
+        "operator": "疾风",
+        "kind": "card",
+        "source_filename": "疾风.png",
+        "local_filename": "疾风.webp",
+        "local_path": "/tmp/df-github-assets/疾风.webp",
+        "source_url": "https://github.com/Entropy-Increase-Team/delta-force-plugin/blob/1a00e85a8a32078b2fd1124a4776d131fb62eefb/resources/imgs/operator/%E7%96%BE%E9%A3%8E.png",
+        "download_url": "https://raw.githubusercontent.com/Entropy-Increase-Team/delta-force-plugin/1a00e85a8a32078b2fd1124a4776d131fb62eefb/resources/imgs/operator/%E7%96%BE%E9%A3%8E.png",
+        "actual_format": "WEBP",
+        "mime_type": "image/webp",
+        "width": 454,
+        "height": 262,
+        "bytes": 30124,
+        "sha256": "a42351a822b457fd8f92127142e4ea43a873ada2cec6587cd0549b726d6eef78",
+        "git_blob_sha1": "4c2835a544595ead361fab771216dce18acf0868",
+        "source_content_type": "image/png",
+        "git_blob_verified": true,
+        "lfs_pointer": false,
+        "header_verified": true,
+        "system_file_description": "RIFF (little-endian) data, Web/P image",
+        "system_metadata_verified": true
+      },
+      {
+        "operator": "红狼",
+        "kind": "banner",
+        "source_filename": "红狼.jpg",
+        "local_filename": "红狼.jpg",
+        "local_path": "/tmp/df-github-assets/红狼.jpg",
+        "source_url": "https://github.com/Entropy-Increase-Team/delta-force-plugin/blob/1a00e85a8a32078b2fd1124a4776d131fb62eefb/resources/imgs/operator/%E7%BA%A2%E7%8B%BC.jpg",
+        "download_url": "https://raw.githubusercontent.com/Entropy-Increase-Team/delta-force-plugin/1a00e85a8a32078b2fd1124a4776d131fb62eefb/resources/imgs/operator/%E7%BA%A2%E7%8B%BC.jpg",
+        "actual_format": "JPEG",
+        "mime_type": "image/jpeg",
+        "width": 4096,
+        "height": 2160,
+        "bytes": 394866,
+        "sha256": "f9575b87af1d2b3b3d694fde6f5aa7edbd2ffd3f3b2852c73af8e029c3f851b2",
+        "git_blob_sha1": "eaa0cef11a8cf01beb094560d3baffe34a3923ce",
+        "source_content_type": "image/jpeg",
+        "git_blob_verified": true,
+        "lfs_pointer": false,
+        "header_verified": true,
+        "system_file_description": "JPEG image data, JFIF standard 1.01, aspect ratio, density 1x1, segment length 16, progressive, precision 8, 4096x2160, components 3",
+        "system_metadata_verified": true
+      },
+      {
+        "operator": "红狼",
+        "kind": "card",
+        "source_filename": "红狼.png",
+        "local_filename": "红狼.webp",
+        "local_path": "/tmp/df-github-assets/红狼.webp",
+        "source_url": "https://github.com/Entropy-Increase-Team/delta-force-plugin/blob/1a00e85a8a32078b2fd1124a4776d131fb62eefb/resources/imgs/operator/%E7%BA%A2%E7%8B%BC.png",
+        "download_url": "https://raw.githubusercontent.com/Entropy-Increase-Team/delta-force-plugin/1a00e85a8a32078b2fd1124a4776d131fb62eefb/resources/imgs/operator/%E7%BA%A2%E7%8B%BC.png",
+        "actual_format": "WEBP",
+        "mime_type": "image/webp",
+        "width": 454,
+        "height": 262,
+        "bytes": 32586,
+        "sha256": "a54bf4388f2f2eeec3f1f19971dd4df1c76f1ac15073856258145cad34a7b934",
+        "git_blob_sha1": "6bf63e8d453be2441c144b7483c4575ab5b0a5e2",
+        "source_content_type": "image/png",
+        "git_blob_verified": true,
+        "lfs_pointer": false,
+        "header_verified": true,
+        "system_file_description": "RIFF (little-endian) data, Web/P image",
+        "system_metadata_verified": true
+      },
+      {
+        "operator": "蛊",
+        "kind": "banner",
+        "source_filename": "蛊.jpg",
+        "local_filename": "蛊.jpg",
+        "local_path": "/tmp/df-github-assets/蛊.jpg",
+        "source_url": "https://github.com/Entropy-Increase-Team/delta-force-plugin/blob/1a00e85a8a32078b2fd1124a4776d131fb62eefb/resources/imgs/operator/%E8%9B%8A.jpg",
+        "download_url": "https://raw.githubusercontent.com/Entropy-Increase-Team/delta-force-plugin/1a00e85a8a32078b2fd1124a4776d131fb62eefb/resources/imgs/operator/%E8%9B%8A.jpg",
+        "actual_format": "JPEG",
+        "mime_type": "image/jpeg",
+        "width": 3840,
+        "height": 2160,
+        "bytes": 474597,
+        "sha256": "6cf1a99dffb94adb6378afa02f29678b6d1e73478390e8a79131246b1d19728e",
+        "git_blob_sha1": "2082039f664a02306f2d144d7655d2880f5b06c3",
+        "source_content_type": "image/jpeg",
+        "git_blob_verified": true,
+        "lfs_pointer": false,
+        "header_verified": true,
+        "system_file_description": "JPEG image data, Exif standard: [TIFF image data, little-endian, direntries=0], baseline, precision 8, 3840x2160, components 3",
+        "system_metadata_verified": true
+      },
+      {
+        "operator": "蛊",
+        "kind": "card",
+        "source_filename": "蛊.png",
+        "local_filename": "蛊.webp",
+        "local_path": "/tmp/df-github-assets/蛊.webp",
+        "source_url": "https://github.com/Entropy-Increase-Team/delta-force-plugin/blob/1a00e85a8a32078b2fd1124a4776d131fb62eefb/resources/imgs/operator/%E8%9B%8A.png",
+        "download_url": "https://raw.githubusercontent.com/Entropy-Increase-Team/delta-force-plugin/1a00e85a8a32078b2fd1124a4776d131fb62eefb/resources/imgs/operator/%E8%9B%8A.png",
+        "actual_format": "WEBP",
+        "mime_type": "image/webp",
+        "width": 454,
+        "height": 262,
+        "bytes": 31474,
+        "sha256": "3f205d21bbf6ee6e7aa36c342f45eb212a0d95d4db142559071483805a419c45",
+        "git_blob_sha1": "ef2eb15c008539d720956776f2961726007d5c1e",
+        "source_content_type": "image/png",
+        "git_blob_verified": true,
+        "lfs_pointer": false,
+        "header_verified": true,
+        "system_file_description": "RIFF (little-endian) data, Web/P image",
+        "system_metadata_verified": true
+      },
+      {
+        "operator": "蜂医",
+        "kind": "banner",
+        "source_filename": "蜂医.jpg",
+        "local_filename": "蜂医.jpg",
+        "local_path": "/tmp/df-github-assets/蜂医.jpg",
+        "source_url": "https://github.com/Entropy-Increase-Team/delta-force-plugin/blob/1a00e85a8a32078b2fd1124a4776d131fb62eefb/resources/imgs/operator/%E8%9C%82%E5%8C%BB.jpg",
+        "download_url": "https://raw.githubusercontent.com/Entropy-Increase-Team/delta-force-plugin/1a00e85a8a32078b2fd1124a4776d131fb62eefb/resources/imgs/operator/%E8%9C%82%E5%8C%BB.jpg",
+        "actual_format": "JPEG",
+        "mime_type": "image/jpeg",
+        "width": 4096,
+        "height": 2160,
+        "bytes": 392319,
+        "sha256": "00b4e3003b61303effd6d1dbb60ce3dd60774bb2a862ddc3c3f6a3d4aa6f8b1c",
+        "git_blob_sha1": "dc13ab409ca7d118eebebd0fb4c2b9b480889f13",
+        "source_content_type": "image/jpeg",
+        "git_blob_verified": true,
+        "lfs_pointer": false,
+        "header_verified": true,
+        "system_file_description": "JPEG image data, JFIF standard 1.01, aspect ratio, density 1x1, segment length 16, progressive, precision 8, 4096x2160, components 3",
+        "system_metadata_verified": true
+      },
+      {
+        "operator": "蜂医",
+        "kind": "card",
+        "source_filename": "蜂医.png",
+        "local_filename": "蜂医.webp",
+        "local_path": "/tmp/df-github-assets/蜂医.webp",
+        "source_url": "https://github.com/Entropy-Increase-Team/delta-force-plugin/blob/1a00e85a8a32078b2fd1124a4776d131fb62eefb/resources/imgs/operator/%E8%9C%82%E5%8C%BB.png",
+        "download_url": "https://raw.githubusercontent.com/Entropy-Increase-Team/delta-force-plugin/1a00e85a8a32078b2fd1124a4776d131fb62eefb/resources/imgs/operator/%E8%9C%82%E5%8C%BB.png",
+        "actual_format": "WEBP",
+        "mime_type": "image/webp",
+        "width": 454,
+        "height": 262,
+        "bytes": 31554,
+        "sha256": "55584c31e1376cff020b93bc86f0b614e63655b2ff5a31b655e5f298b09f0d5e",
+        "git_blob_sha1": "e4e6d7658d639f319859983ddf31e036d1d03db3",
+        "source_content_type": "image/png",
+        "git_blob_verified": true,
+        "lfs_pointer": false,
+        "header_verified": true,
+        "system_file_description": "RIFF (little-endian) data, Web/P image",
+        "system_metadata_verified": true
+      },
+      {
+        "operator": "蝶",
+        "kind": "banner",
+        "source_filename": "蝶.jpg",
+        "local_filename": "蝶.jpg",
+        "local_path": "/tmp/df-github-assets/蝶.jpg",
+        "source_url": "https://github.com/Entropy-Increase-Team/delta-force-plugin/blob/1a00e85a8a32078b2fd1124a4776d131fb62eefb/resources/imgs/operator/%E8%9D%B6.jpg",
+        "download_url": "https://raw.githubusercontent.com/Entropy-Increase-Team/delta-force-plugin/1a00e85a8a32078b2fd1124a4776d131fb62eefb/resources/imgs/operator/%E8%9D%B6.jpg",
+        "actual_format": "JPEG",
+        "mime_type": "image/jpeg",
+        "width": 3840,
+        "height": 2210,
+        "bytes": 574668,
+        "sha256": "1d99b30cde3dba2d0198ac4bb9821a0a9a383728462a5f538b2a45f58eb37728",
+        "git_blob_sha1": "cc0a446e3b418f786be5b34124ec97eac283df0d",
+        "source_content_type": "image/jpeg",
+        "git_blob_verified": true,
+        "lfs_pointer": false,
+        "header_verified": true,
+        "system_file_description": "JPEG image data, JFIF standard 1.01, aspect ratio, density 1x1, segment length 16, progressive, precision 8, 3840x2210, components 3",
+        "system_metadata_verified": true
+      },
+      {
+        "operator": "蝶",
+        "kind": "card",
+        "source_filename": "蝶.png",
+        "local_filename": "蝶.webp",
+        "local_path": "/tmp/df-github-assets/蝶.webp",
+        "source_url": "https://github.com/Entropy-Increase-Team/delta-force-plugin/blob/1a00e85a8a32078b2fd1124a4776d131fb62eefb/resources/imgs/operator/%E8%9D%B6.png",
+        "download_url": "https://raw.githubusercontent.com/Entropy-Increase-Team/delta-force-plugin/1a00e85a8a32078b2fd1124a4776d131fb62eefb/resources/imgs/operator/%E8%9D%B6.png",
+        "actual_format": "WEBP",
+        "mime_type": "image/webp",
+        "width": 454,
+        "height": 262,
+        "bytes": 26848,
+        "sha256": "89d5a1522375be7a18b26dafa7f9cb03655c80749aa6fb2da31dac199cda051a",
+        "git_blob_sha1": "0923502ade0f1036644b3612901760d56040f638",
+        "source_content_type": "image/png",
+        "git_blob_verified": true,
+        "lfs_pointer": false,
+        "header_verified": true,
+        "system_file_description": "RIFF (little-endian) data, Web/P image",
+        "system_metadata_verified": true
+      },
+      {
+        "operator": "银翼",
+        "kind": "banner",
+        "source_filename": "银翼.jpg",
+        "local_filename": "银翼.jpg",
+        "local_path": "/tmp/df-github-assets/银翼.jpg",
+        "source_url": "https://github.com/Entropy-Increase-Team/delta-force-plugin/blob/1a00e85a8a32078b2fd1124a4776d131fb62eefb/resources/imgs/operator/%E9%93%B6%E7%BF%BC.jpg",
+        "download_url": "https://raw.githubusercontent.com/Entropy-Increase-Team/delta-force-plugin/1a00e85a8a32078b2fd1124a4776d131fb62eefb/resources/imgs/operator/%E9%93%B6%E7%BF%BC.jpg",
+        "actual_format": "JPEG",
+        "mime_type": "image/jpeg",
+        "width": 3840,
+        "height": 2241,
+        "bytes": 493827,
+        "sha256": "d16f3746198477dfd4d2683287ce4ca6add59bb022dd51303214159f07f81199",
+        "git_blob_sha1": "9682a33cbd7d44b492ec297f264a879353b37cea",
+        "source_content_type": "image/jpeg",
+        "git_blob_verified": true,
+        "lfs_pointer": false,
+        "header_verified": true,
+        "system_file_description": "JPEG image data, JFIF standard 1.01, aspect ratio, density 1x1, segment length 16, progressive, precision 8, 3840x2241, components 3",
+        "system_metadata_verified": true
+      },
+      {
+        "operator": "银翼",
+        "kind": "card",
+        "source_filename": "银翼.png",
+        "local_filename": "银翼.webp",
+        "local_path": "/tmp/df-github-assets/银翼.webp",
+        "source_url": "https://github.com/Entropy-Increase-Team/delta-force-plugin/blob/1a00e85a8a32078b2fd1124a4776d131fb62eefb/resources/imgs/operator/%E9%93%B6%E7%BF%BC.png",
+        "download_url": "https://raw.githubusercontent.com/Entropy-Increase-Team/delta-force-plugin/1a00e85a8a32078b2fd1124a4776d131fb62eefb/resources/imgs/operator/%E9%93%B6%E7%BF%BC.png",
+        "actual_format": "WEBP",
+        "mime_type": "image/webp",
+        "width": 454,
+        "height": 262,
+        "bytes": 38096,
+        "sha256": "fd83613f2185882bf4a3ac159b34c6d99af35f70d4e532e86b5ae67fa7526bb5",
+        "git_blob_sha1": "40069531453e6481b3b84251af7f73baff2e1eb2",
+        "source_content_type": "image/png",
+        "git_blob_verified": true,
+        "lfs_pointer": false,
+        "header_verified": true,
+        "system_file_description": "RIFF (little-endian) data, Web/P image",
+        "system_metadata_verified": true
+      },
+      {
+        "operator": "露娜",
+        "kind": "banner",
+        "source_filename": "露娜.jpg",
+        "local_filename": "露娜.jpg",
+        "local_path": "/tmp/df-github-assets/露娜.jpg",
+        "source_url": "https://github.com/Entropy-Increase-Team/delta-force-plugin/blob/1a00e85a8a32078b2fd1124a4776d131fb62eefb/resources/imgs/operator/%E9%9C%B2%E5%A8%9C.jpg",
+        "download_url": "https://raw.githubusercontent.com/Entropy-Increase-Team/delta-force-plugin/1a00e85a8a32078b2fd1124a4776d131fb62eefb/resources/imgs/operator/%E9%9C%B2%E5%A8%9C.jpg",
+        "actual_format": "JPEG",
+        "mime_type": "image/jpeg",
+        "width": 4096,
+        "height": 2160,
+        "bytes": 513883,
+        "sha256": "9a657852a3ccfa19e41c510013f1d20e83e6af05f880a127aaf487c8fe7cc719",
+        "git_blob_sha1": "02172d2501676723980133641078441633573b5a",
+        "source_content_type": "image/jpeg",
+        "git_blob_verified": true,
+        "lfs_pointer": false,
+        "header_verified": true,
+        "system_file_description": "JPEG image data, JFIF standard 1.01, aspect ratio, density 1x1, segment length 16, progressive, precision 8, 4096x2160, components 3",
+        "system_metadata_verified": true
+      },
+      {
+        "operator": "露娜",
+        "kind": "card",
+        "source_filename": "露娜.png",
+        "local_filename": "露娜.webp",
+        "local_path": "/tmp/df-github-assets/露娜.webp",
+        "source_url": "https://github.com/Entropy-Increase-Team/delta-force-plugin/blob/1a00e85a8a32078b2fd1124a4776d131fb62eefb/resources/imgs/operator/%E9%9C%B2%E5%A8%9C.png",
+        "download_url": "https://raw.githubusercontent.com/Entropy-Increase-Team/delta-force-plugin/1a00e85a8a32078b2fd1124a4776d131fb62eefb/resources/imgs/operator/%E9%9C%B2%E5%A8%9C.png",
+        "actual_format": "WEBP",
+        "mime_type": "image/webp",
+        "width": 454,
+        "height": 262,
+        "bytes": 27538,
+        "sha256": "6dffefa85792c4fe8c646b3149eadeb6ea82ed9ea1500b15e543af61e9272d70",
+        "git_blob_sha1": "e0fd0075a6e0fcb789e078f5569e429fd9a3ea61",
+        "source_content_type": "image/png",
+        "git_blob_verified": true,
+        "lfs_pointer": false,
+        "header_verified": true,
+        "system_file_description": "RIFF (little-endian) data, Web/P image",
+        "system_metadata_verified": true
+      },
+      {
+        "operator": "骇爪",
+        "kind": "banner",
+        "source_filename": "骇爪.jpg",
+        "local_filename": "骇爪.jpg",
+        "local_path": "/tmp/df-github-assets/骇爪.jpg",
+        "source_url": "https://github.com/Entropy-Increase-Team/delta-force-plugin/blob/1a00e85a8a32078b2fd1124a4776d131fb62eefb/resources/imgs/operator/%E9%AA%87%E7%88%AA.jpg",
+        "download_url": "https://raw.githubusercontent.com/Entropy-Increase-Team/delta-force-plugin/1a00e85a8a32078b2fd1124a4776d131fb62eefb/resources/imgs/operator/%E9%AA%87%E7%88%AA.jpg",
+        "actual_format": "JPEG",
+        "mime_type": "image/jpeg",
+        "width": 3840,
+        "height": 2240,
+        "bytes": 833905,
+        "sha256": "5350de0690e54f9c673107baa9c53571d2f888fb9766fc91f24d75e0dd7ad53f",
+        "git_blob_sha1": "514617101cb186e45577a6565d330d8786300b74",
+        "source_content_type": "image/jpeg",
+        "git_blob_verified": true,
+        "lfs_pointer": false,
+        "header_verified": true,
+        "system_file_description": "JPEG image data, Exif standard: [TIFF image data, little-endian, direntries=0], baseline, precision 8, 3840x2240, components 3",
+        "system_metadata_verified": true
+      },
+      {
+        "operator": "骇爪",
+        "kind": "card",
+        "source_filename": "骇爪.png",
+        "local_filename": "骇爪.webp",
+        "local_path": "/tmp/df-github-assets/骇爪.webp",
+        "source_url": "https://github.com/Entropy-Increase-Team/delta-force-plugin/blob/1a00e85a8a32078b2fd1124a4776d131fb62eefb/resources/imgs/operator/%E9%AA%87%E7%88%AA.png",
+        "download_url": "https://raw.githubusercontent.com/Entropy-Increase-Team/delta-force-plugin/1a00e85a8a32078b2fd1124a4776d131fb62eefb/resources/imgs/operator/%E9%AA%87%E7%88%AA.png",
+        "actual_format": "WEBP",
+        "mime_type": "image/webp",
+        "width": 454,
+        "height": 262,
+        "bytes": 27836,
+        "sha256": "a515b46a3b77d1d14b4ce9f9ac504c96fe168be8a8abb1cf03336719cbdc2038",
+        "git_blob_sha1": "d72b2cef9b1ced97a85c0878af9c7353dcf94ae9",
+        "source_content_type": "image/png",
+        "git_blob_verified": true,
+        "lfs_pointer": false,
+        "header_verified": true,
+        "system_file_description": "RIFF (little-endian) data, Web/P image",
+        "system_metadata_verified": true
+      }
+    ],
+    "failures": [],
+    "validation_note": "Files checked against committed Git blob SHA-1 and byte size; image magic and dimensions parsed; no image transformations applied. PNG-named source files are saved using their real format extension. All images are also independently identified by macOS file and sips; pixel dimensions agree.",
+    "system_validation_failures": []
+  }
+}

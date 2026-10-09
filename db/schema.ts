@@ -1,0 +1,2 @@
+import {sqliteTable,text,integer} from "drizzle-orm/sqlite-core";
+export const passwordSnapshots=sqliteTable("password_snapshots",{id:text("id").primaryKey(),payload:text("payload").notNull(),attemptedAt:integer("attempted_at").notNull(),updatedAt:integer("updated_at").notNull()});
