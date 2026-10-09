@@ -52,7 +52,7 @@ export function OperatorSection(){
   setSelected(operators[target].name);
   // Native focus scrolling would offset Embla's looping track.
   (carousel?.slideNodes()[target] as HTMLElement|undefined)?.focus({preventScroll:true});
- }} >{operators.map((o,i)=><TabsTrigger key={o.name} value={o.name} className="operator-tab" aria-label={"选择干员"+o.name} onMouseDown={event=>event.preventDefault()} onClick={event=>{setSelected(o.name);event.currentTarget.focus({preventScroll:true})}}><img src={o.portrait} alt="" loading="lazy" draggable={false}/><span>{o.name}</span><small>{String(i+1).padStart(2,"0")}</small></TabsTrigger>)}</TabsList>
+ }} >{operators.map(o=><TabsTrigger key={o.name} value={o.name} className="operator-tab" aria-label={"选择干员"+o.name} onMouseDown={event=>event.preventDefault()} onClick={event=>{setSelected(o.name);event.currentTarget.focus({preventScroll:true})}}><img src={o.portrait} alt="" loading="lazy" draggable={false}/><span>{o.name}</span></TabsTrigger>)}</TabsList>
  </div>
  <button className="operator-scroll-control" onClick={()=>move(1)} aria-label="循环选择下一位干员"><ChevronRight size={22}/></button>
  </div>
