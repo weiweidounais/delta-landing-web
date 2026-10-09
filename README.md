@@ -43,7 +43,7 @@ npm run preview:pages
 ## 资料与素材
 官网：https://df.qq.com/cp/a20240906main/
 烽火地带玩法介绍：https://df.qq.com/cp/a20240906main/#part3
-视频来自用户附件，网页版本位于 `public/videos/hero-intro.mp4` 和 `public/videos/firefight-introduction.mp4`。开场采用 H.264 编码，保留原始 AAC 立体声音轨，部署确认后带声播放一次；介绍视频保留完整内容和 AAC 音轨，压缩到约 41 MB，仅在点击播放后加载。两个文件均启用 MP4 faststart，预览封面从各自视频的第 2 秒提取。
+视频来自用户附件，网页版本位于 `public/videos/hero-intro.mp4` 和 `public/videos/firefight-introduction.mp4`。开场采用 H.264 编码和 AAC 立体声音轨，部署确认后带声播放一次；音轨在 11.85–12.00 秒淡出，移除结尾的 CUT 声音及混响，完整保留原视频画面与时长。介绍视频保留完整内容和 AAC 音轨，压缩到约 41 MB，仅在点击播放后加载。两个文件均启用 MP4 faststart，预览封面从各自视频的第 2 秒提取。
 GitHub：https://github.com/Entropy-Increase-Team/delta-force-plugin （素材核对提交 1a00e85a8a32078b2fd1124a4776d131fb62eefb）
 密码来源：
 - KKRB：https://www.kkrb.net/?theme=dark&viewpage=view%2Fmap%2Fbonus_door

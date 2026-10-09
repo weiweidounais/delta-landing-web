@@ -63,7 +63,7 @@ export function HeroIntroVideo(){
   },950);
  };
  return <div ref={layerRef} className="hero-video-layer" data-phase={phase} aria-hidden={complete}>
-  <video ref={videoRef} className="hero-video" src={sitePath("/videos/hero-intro.mp4?v=clearance-audio")} poster={sitePath("/assets/hero-video-poster.jpg")} playsInline preload="auto" aria-label="三角洲行动开场视频"/>
+  <video ref={videoRef} className="hero-video" src={sitePath("/videos/hero-intro.mp4?v=clearance-no-cut")} poster={sitePath("/assets/hero-video-poster.jpg")} playsInline preload="auto" aria-label="三角洲行动开场视频"/>
   <img className="intro-video-brand" src={sitePath("/assets/logo.png")} alt="三角洲行动"/>
   <div className={styles.clearance} data-phase={phase} aria-hidden={phase==="playing"||complete} inert={phase==="playing"||complete}>
    <div className={styles.hudGrid} aria-hidden="true"/>
