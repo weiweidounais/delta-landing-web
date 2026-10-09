@@ -1,5 +1,5 @@
 .clearance{position:absolute;inset:0;z-index:6;display:grid;place-items:center;overflow:hidden;background:#020607;color:#dce7e6;opacity:1;transition:opacity .45s ease;isolation:isolate}
-.clearance[data-phase=playing]{opacity:0;visibility:hidden;pointer-events:none;transition:opacity .45s ease,visibility 0s .45s}
+.clearance[data-phase=playing]{clip-path:inset(100% 0 0 0);opacity:0;visibility:hidden;pointer-events:none;transition:opacity .45s ease,visibility 0s .45s}
 .clearance[data-phase=scanning]{animation:unlock-pass .95s cubic-bezier(.2,.6,.3,1) forwards;pointer-events:none}
 .hudGrid{position:absolute;inset:0;z-index:-1;background:radial-gradient(ellipse at center,#12322c33,transparent 58%),linear-gradient(#58c8a805 1px,transparent 1px),linear-gradient(90deg,#58c8a805 1px,transparent 1px);background-size:auto,64px 64px,64px 64px;mask-image:radial-gradient(ellipse,black 10%,transparent 80%)}
 .hudTop,.hudBottom{position:absolute;left:4vw;right:4vw;display:flex;justify-content:space-between;gap:20px;align-items:center;font:11px var(--font-mono);letter-spacing:.12em;color:#65827b}
