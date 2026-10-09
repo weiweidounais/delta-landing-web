@@ -89,6 +89,10 @@
 .hero-video{width:100%;height:100%;display:block;object-fit:cover;object-position:center}
 .intro-video-brand{position:absolute;top:30px;left:4vw;width:180px;height:auto;filter:drop-shadow(0 2px 10px #0008);pointer-events:none}
 .hero-video-controls{position:absolute;inset-inline:4vw;bottom:32px;padding:40px 0 5px;color:#e5f4ff}
+.hero-video-layer:not([data-phase=playing]) .intro-video-brand,.hero-video-layer:not([data-phase=playing]) .hero-video-controls{visibility:hidden}
+.hero-video-buttons{display:flex;align-items:center;gap:12px}
+.hero-video-buttons .hero-video-sound{display:grid;place-items:center;padding:8px 10px}
+.scroll-experience>.site-header{z-index:50}
 .hero-video-controls::before{content:"";position:absolute;inset:-38px -4vw -32px;background:linear-gradient(transparent,#03101de6);z-index:-1;pointer-events:none}
 .hero-video-control-label{display:flex;align-items:center;gap:24px;margin-bottom:16px;font-size:14px;letter-spacing:.05em}
 .hero-video-control-label>span:first-child{flex:1}
@@ -99,6 +103,7 @@
 .hero-video-control-label button:hover{background:#1f4c70}
 .hero-video-progress{height:3px;background:#afcce24a;overflow:hidden}
 .hero-video-progress span{display:block;height:100%;background:#7cf9cc;transition:width .2s linear}
+@media(max-width:600px){.hero-video-control-label{flex-wrap:wrap}.hero-video-control-label>span:first-child{min-width:0;flex-basis:50%}.hero-video-buttons{width:100%;justify-content:flex-end;gap:10px}.hero-video-control-label small{line-height:1.7}}
 .about-grid{grid-template-columns:minmax(0,1.12fr) minmax(0,1fr);gap:5vw;align-items:start}
 .about-video-window{margin:0;border:1px solid #54778e80;background:#0b1c2a;box-shadow:0 18px 54px #0004;align-self:start}
 .about-video-screen{position:relative;aspect-ratio:16/9;background:#000;overflow:hidden}

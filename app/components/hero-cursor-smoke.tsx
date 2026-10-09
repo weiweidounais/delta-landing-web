@@ -3,7 +3,6 @@
 import {useEffect, useRef} from "react";
 import styles from "./hero-cursor-smoke.module.css";
 
-const INTRO_CHANGE_EVENT = "delta-hero-intro-change";
 const MAX_PARTICLES = 72;
 const FADE_OUT_MS = 320;
 
@@ -61,27 +60,21 @@ export function HeroCursorSmoke() {
 
   useEffect(() => {
     const canvas = canvasRef.current;
-    const scene = canvas?.closest<HTMLElement>(".hero-scene");
-    const hero = canvas?.closest<HTMLElement>(".hero");
     const context = canvas?.getContext("2d", {alpha: true});
-    if (!canvas || !scene || !hero || !context) return;
+    if (!canvas || !context) return;
 
     const reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)");
     const coarsePointer = window.matchMedia("(pointer: coarse)");
-    const nextSection = hero.nextElementSibling;
     let textures: HTMLCanvasElement[] | null = null;
     let particles: Particle[] = [];
     let target: Point | null = null;
     let lastEmitted: Point | null = null;
     let pointerInside = false;
-    let sceneVisible = false;
-    let width = 1, height = 1, ratio = 1, visibleHeight = 1;
-    let rect = scene.getBoundingClientRect();
+    let width = 1, height = 1, ratio = 1;
     let frame = 0, lastFrame = 0, lastEmission = 0;
     let fadeStarted: number | null = null;
 
     const disabled = () => document.hidden || reducedMotion.matches || coarsePointer.matches;
-    const introComplete = () => hero.dataset.introState === "complete";
 
     const clear = () => {
       cancelAnimationFrame(frame);
@@ -89,6 +82,8 @@ export function HeroCursorSmoke() {
       lastFrame = 0;
       particles = [];
       target = lastEmitted = null;
+      pointerInside = false;
+      lastEmission = 0;
       fadeStarted = null;
       context.clearRect(0, 0, width, height);
     };
@@ -114,7 +109,7 @@ export function HeroCursorSmoke() {
 
     const draw = (now: number) => {
       frame = 0;
-      if (disabled() || !introComplete() || !sceneVisible) {
+      if (disabled()) {
         clear();
         return;
       }
@@ -142,10 +137,6 @@ export function HeroCursorSmoke() {
         return;
       }
       if (particles.length && !textures) textures = makeSmokeTextures();
-      context.save();
-      context.beginPath();
-      context.rect(0, 0, width, visibleHeight);
-      context.clip();
       particles = particles.filter(particle => {
         particle.age += elapsed;
         const progress = particle.age / particle.life;
@@ -165,22 +156,18 @@ export function HeroCursorSmoke() {
         context.restore();
         return true;
       });
-      context.restore();
       // Stationary cursors let the remaining wisps dissolve; no idle animation loop remains.
       if (particles.length) frame = requestAnimationFrame(draw);
       else lastFrame = 0;
     };
 
     const schedule = () => {
-      if (!frame && !disabled() && introComplete() && sceneVisible) frame = requestAnimationFrame(draw);
+      if (!frame && !disabled()) frame = requestAnimationFrame(draw);
     };
 
     const measure = () => {
-      rect = scene.getBoundingClientRect();
-      const nextTop = nextSection?.getBoundingClientRect().top ?? window.innerHeight;
-      visibleHeight = Math.max(0, Math.min(rect.height, window.innerHeight - rect.top, nextTop - rect.top));
-      sceneVisible = rect.bottom > 0 && rect.top < window.innerHeight && visibleHeight > 1;
-      const newWidth = Math.max(1, rect.width), newHeight = Math.max(1, rect.height);
+      const newWidth = Math.max(1, canvas.clientWidth || window.innerWidth);
+      const newHeight = Math.max(1, canvas.clientHeight || window.innerHeight);
       const newRatio = Math.min(window.devicePixelRatio || 1, 1.5, Math.sqrt(2_400_000 / (newWidth * newHeight)));
       if (newWidth !== width || newHeight !== height || newRatio !== ratio) {
         clear();
@@ -189,21 +176,22 @@ export function HeroCursorSmoke() {
         canvas.height = Math.max(1, Math.round(height * ratio));
         context.setTransform(ratio, 0, 0, ratio, 0, 0);
       }
-      if (!sceneVisible || disabled() || !introComplete()) clear();
+      if (disabled()) clear();
     };
 
     const pointerMove = (event: PointerEvent) => {
-      if (event.pointerType !== "mouse" || disabled() || !introComplete()) return;
-      measure();
-      const x = event.clientX - rect.left, y = event.clientY - rect.top;
-      if (!sceneVisible || x < 0 || x > width || y < 0 || y > visibleHeight) return;
+      if (event.pointerType !== "mouse" || disabled()) return;
+      const x = event.clientX, y = event.clientY;
+      if (x < 0 || x > width || y < 0 || y > height) return;
       pointerInside = true;
       fadeStarted = null;
       target = {x, y};
       schedule();
     };
 
-    const pointerLeave = () => {
+    const pointerLeave = (event: PointerEvent) => {
+      // pointerout also bubbles when crossing ordinary elements; only leaving the window fades the trail.
+      if (event.pointerType !== "mouse" || event.relatedTarget !== null) return;
       pointerInside = false;
       target = lastEmitted = null;
       if (particles.length && fadeStarted === null) fadeStarted = performance.now();
@@ -211,18 +199,13 @@ export function HeroCursorSmoke() {
     };
 
     const policyChange = () => {
-      pointerInside = false;
+      clear();
       measure();
     };
-    const resizeObserver = new ResizeObserver(measure);
-    resizeObserver.observe(scene);
-    const intersectionObserver = new IntersectionObserver(measure, {threshold: [0, .01, 1]});
-    intersectionObserver.observe(scene);
-    scene.addEventListener("pointermove", pointerMove, {passive: true});
-    scene.addEventListener("pointerleave", pointerLeave);
-    hero.addEventListener(INTRO_CHANGE_EVENT, policyChange);
+    window.addEventListener("pointermove", pointerMove, {passive: true});
+    window.addEventListener("pointerout", pointerLeave, {passive: true});
+    window.addEventListener("blur", clear);
     window.addEventListener("resize", measure);
-    window.addEventListener("scroll", measure, {passive: true});
     document.addEventListener("visibilitychange", policyChange);
     reducedMotion.addEventListener("change", policyChange);
     coarsePointer.addEventListener("change", policyChange);
@@ -230,13 +213,10 @@ export function HeroCursorSmoke() {
 
     return () => {
       clear();
-      resizeObserver.disconnect();
-      intersectionObserver.disconnect();
-      scene.removeEventListener("pointermove", pointerMove);
-      scene.removeEventListener("pointerleave", pointerLeave);
-      hero.removeEventListener(INTRO_CHANGE_EVENT, policyChange);
+      window.removeEventListener("pointermove", pointerMove);
+      window.removeEventListener("pointerout", pointerLeave);
+      window.removeEventListener("blur", clear);
       window.removeEventListener("resize", measure);
-      window.removeEventListener("scroll", measure);
       document.removeEventListener("visibilitychange", policyChange);
       reducedMotion.removeEventListener("change", policyChange);
       coarsePointer.removeEventListener("change", policyChange);
