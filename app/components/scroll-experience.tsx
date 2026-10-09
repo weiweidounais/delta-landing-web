@@ -1,6 +1,6 @@
 "use client";
 import {useEffect,useRef,type ReactNode} from "react";
-import {heroProgress,HERO_PROGRESS_EVENT,HERO_EXTRA_SVH,ZOOM_SCROLL_SVH} from "@/lib/hero-scroll";
+import {HERO_INTRO_EVENT,ZOOM_SCROLL_SVH} from "@/lib/hero-scroll";
 const clamp=(value:number)=>Math.max(0,Math.min(1,value));
 export function ScrollExperience({children}:{children:ReactNode}){
  const root=useRef<HTMLElement>(null);
@@ -18,12 +18,11 @@ export function ScrollExperience({children}:{children:ReactNode}){
   let frame=0,distance=1,headerHeight=82;
   const update=()=>{
    frame=0;
-   const videoActive=!!videoLayer&&hero?.dataset.videoFailed!=="true"&&!motion.matches;
-   const timeline=heroProgress(window.scrollY,distance,videoActive);
-   const progress=motion.matches?1:timeline.zoomProgress;
-   main.style.setProperty("--hero-video-visible",String(timeline.videoVisible));
-   if(videoLayer){videoLayer.inert=timeline.videoVisible<.05;videoLayer.setAttribute("aria-hidden",String(timeline.videoVisible<.05))}
-   hero?.dispatchEvent(new CustomEvent(HERO_PROGRESS_EVENT,{detail:timeline}));
+   let videoActive=!!videoLayer&&hero?.dataset.introState!=="complete"&&!motion.matches;
+   if(videoActive&&hero&&cards[0]&&cards[0].getBoundingClientRect().top<=headerHeight){
+    hero.dataset.introState="complete";hero.dispatchEvent(new Event(HERO_INTRO_EVENT));videoActive=false;
+   }
+   const progress=motion.matches?1:videoActive?0:clamp(window.scrollY/distance);
    const reveal=clamp((progress-.25)/.55);
    const eased=reveal*reveal*(3-2*reveal);
    main.style.setProperty("--intro-reveal",String(eased));
@@ -46,7 +45,7 @@ export function ScrollExperience({children}:{children:ReactNode}){
   const schedule=()=>{if(!frame)frame=requestAnimationFrame(update)};
   const measure=()=>{
    headerHeight=header?.offsetHeight??82;
-   hero?.style.setProperty("--hero-extra-distance",(videoLayer&&hero.dataset.videoFailed!=="true"?HERO_EXTRA_SVH:ZOOM_SCROLL_SVH)+"svh");
+   hero?.style.setProperty("--hero-extra-distance",ZOOM_SCROLL_SVH+"svh");
    distance=Math.max(1,(hero?.offsetHeight??0)-(scene?.offsetHeight??0));
    cards.forEach((card,index)=>{
     // A tall card scrolls to its bottom before it stays beneath the next card.
@@ -58,6 +57,9 @@ export function ScrollExperience({children}:{children:ReactNode}){
   const navigate=(hash:string,behavior:ScrollBehavior)=>{
    const target=Array.from(main.children).find(element=>"#"+element.id===hash) as HTMLElement|undefined;
    if(!target)return false;
+   if(target!==hero&&hero&&hero.dataset.introState!=="complete"){
+    hero.dataset.introState="complete";hero.dispatchEvent(new Event(HERO_INTRO_EVENT));
+   }
    // Sticky positions change with scrolling; anchors need the original flow position.
    let top=main.offsetTop;
    for(const element of Array.from(main.children) as HTMLElement[]){
@@ -86,9 +88,10 @@ export function ScrollExperience({children}:{children:ReactNode}){
   main.addEventListener("click",click);
   window.addEventListener("hashchange",hashChange);
   motion.addEventListener("change",measure);
+  hero?.addEventListener(HERO_INTRO_EVENT,schedule);
   measure();cancelAnimationFrame(frame);update();
   if(location.hash)navigate(location.hash,"instant");
-  return()=>{observer.disconnect();cancelAnimationFrame(frame);window.removeEventListener("scroll",schedule);window.removeEventListener("resize",measure);main.removeEventListener("click",click);window.removeEventListener("hashchange",hashChange);motion.removeEventListener("change",measure)};
+  return()=>{observer.disconnect();cancelAnimationFrame(frame);window.removeEventListener("scroll",schedule);window.removeEventListener("resize",measure);main.removeEventListener("click",click);window.removeEventListener("hashchange",hashChange);motion.removeEventListener("change",measure);hero?.removeEventListener(HERO_INTRO_EVENT,schedule)};
  },[]);
  return <main ref={root} className="scroll-experience">{children}</main>;
 }
